@@ -1,5 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -35,7 +39,7 @@ public float CurrentMoveSpeed { get
         return _isMoving; 
     } private set {
         _isMoving = value;
-        animator.SetBool("isMoving", value);
+        animator.SetBool(AnimationStrings.isMoving, value);
     } 
     }
     [SerializeField]
@@ -47,7 +51,7 @@ public float CurrentMoveSpeed { get
     }
     private set {
         _isRunning = value;
-        animator.SetBool("IsRunning", value);
+        animator.SetBool(AnimationStrings.isRunning, value);
     }
     }
     Rigidbody2D rb;
