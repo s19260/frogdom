@@ -10,9 +10,9 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections))] 
     public class PlayerController : MonoBehaviour
 {
-    public float walkSpeed = 5f;
+    public float walkSpeed = 40f;
     public float runSpeed = 8f;
-    public float jumpInpulse = 10f;
+    public float jumpInpulse = 60f;
     Vector2 moveInput;
     TouchingDirections touchingDirections;
 
@@ -78,8 +78,8 @@ public float CurrentMoveSpeed { get
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
-        animator.SetFloat(AnimationStrings.yVelocity, rb.velocity.y);
+        rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.linearVelocity.y);
+        animator.SetFloat(AnimationStrings.yVelocity, rb.linearVelocity.y);
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -114,7 +114,7 @@ public float CurrentMoveSpeed { get
         if (context.started && touchingDirections.IsGrounded)
         {
             animator.SetTrigger(AnimationStrings.jump);
-            rb.velocity = new Vector2(rb.velocity.x, jumpInpulse);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInpulse);
         }
     }
 }
