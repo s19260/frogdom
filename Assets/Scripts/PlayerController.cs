@@ -117,4 +117,11 @@ public float CurrentMoveSpeed { get
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInpulse);
         }
     }
+
+    public void OnAttack(InputAction.CallbackContext context){
+        if(context.started)
+        {
+            animator.SetTrigger(AnimationStrings.attack);
+        }
+    }
 }
