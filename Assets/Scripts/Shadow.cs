@@ -52,35 +52,42 @@ public class Shadow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
     }
-float timer = 0f;
 
     private void FixedUpdate()
     {
-                touchingDirections.wallCheckDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+        touchingDirections.wallCheckDirection = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
 
-        if(touchingDirections.IsGrounded && touchingDirections.IsOnWall)
+        if (touchingDirections.IsGrounded && touchingDirections.IsOnWall)
         {
             FlipDirection();
         }
-        rb.linearVelocity = new Vector2(walkSpeed, rb.linearVelocity.y);
+
+        float tempWalkSpeed = walkSpeed;
+        if (WalkDirection == WalkableDirection.Left)
+        {
+            tempWalkSpeed = -tempWalkSpeed;
+        }
+
+        rb.linearVelocity = new Vector2(tempWalkSpeed, rb.linearVelocity.y);
     }
+
+
 
     private void FlipDirection()
     {
-        if (WalkDirection == WalkableDirection.Left)
+        switch (WalkDirection)
         {
-            WalkDirection = WalkableDirection.Right;
-            Debug.Log(" skret w prawo");
-        }
-        else if (WalkDirection == WalkableDirection.Right)
-        {
-            WalkDirection = WalkableDirection.Left;
-                        Debug.Log(" skret w lewo");
-
-        }
-        else
-        {
-            Debug.Log(name + "'s WalkDirection is not set to Left or Right");
+            case WalkableDirection.Left:
+                WalkDirection = WalkableDirection.Right;
+                Debug.Log(" skret w prawo");
+                break;
+            case WalkableDirection.Right:
+                WalkDirection = WalkableDirection.Left;
+                Debug.Log(" skret w lewo");
+                break;
+            default:
+                Debug.Log(name + "'s WalkDirection is not set to Left or Right");
+                break;
         }
     }
     void Start()

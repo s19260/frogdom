@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7770720035036474694}
   - component: {fileID: 2982583603674653509}
   - component: {fileID: 1486499032483850537}
+  - component: {fileID: 4293826906561869365}
   m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   clifEdgeZone: {fileID: 0}
-  _walkDirection: 0
+  _walkDirection: 1
   walkDirectionVector: {x: 0, y: 0}
 --- !u!114 &2982583603674653509
 MonoBehaviour:
@@ -226,3 +227,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &4293826906561869365
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833928722074651852}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
