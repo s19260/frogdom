@@ -52,6 +52,7 @@ public class Shadow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
     }
+float timer = 0f;
 
     private void FixedUpdate()
     {
@@ -66,13 +67,20 @@ public class Shadow : MonoBehaviour
 
     private void FlipDirection()
     {
-        if(WalkDirection == WalkableDirection.Right){
-            WalkDirection = WalkableDirection.Left;
-        } else if (WalkDirection == WalkableDirection.Left){
-            WalkDirection = WalkableDirection.Right;
-        } else
+        if (WalkDirection == WalkableDirection.Left)
         {
-            Debug.LogError("Currernt walkable direction is not set to legal value");
+            WalkDirection = WalkableDirection.Right;
+            Debug.Log(" skret w prawo");
+        }
+        else if (WalkDirection == WalkableDirection.Right)
+        {
+            WalkDirection = WalkableDirection.Left;
+                        Debug.Log(" skret w lewo");
+
+        }
+        else
+        {
+            Debug.Log(name + "'s WalkDirection is not set to Left or Right");
         }
     }
     void Start()

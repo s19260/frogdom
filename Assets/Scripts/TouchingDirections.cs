@@ -31,18 +31,30 @@ public class TouchingDirections : MonoBehaviour
 
     [SerializeField]
     private bool _isOnWall;
-    public bool IsOnWall { get{
-         return _isOnWall;
-    } private set{
-        _isOnWall = value;
-        animator.SetBool(AnimationStrings.isOnWall, value);
-    } }
+    
+    public bool IsOnWall
+    {
+        get
+        {
+            return _isOnWall;
+        }
+        set
+        {
+            _isOnWall = value;
+            animator.SetBool(AnimationStrings.isOnWall, value);
+        }
+    }
 
 
     private void Awake()
     {
         col = GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
+                if(col.offset.x != 0)
+        {
+            Debug.LogWarning("Recommended x offset of 0 for TouchingDirections collider on game object " + gameObject.name + ". Adjust the transform instead");
+        }
+
     }
 
     void FixedUpdate()
