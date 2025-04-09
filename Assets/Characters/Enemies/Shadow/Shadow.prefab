@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b5cd8a4193bea954dbd72b65d828eb87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4, y: 4}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   clifEdgeZone: {fileID: 0}
-  _walkDirection: 1
+  _walkDirection: 0
   walkDirectionVector: {x: 0, y: 0}
 --- !u!114 &2982583603674653509
 MonoBehaviour:
