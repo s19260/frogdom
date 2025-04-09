@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class Shadow : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class Shadow : MonoBehaviour
 
     public float walkSpeed = 5f;
     public DetectionZone attackZone;
+    private Animator animator;
 
     [SerializeField] public WalkableDirection _walkDirection;
 

@@ -105,10 +105,10 @@ GameObject:
   - component: {fileID: 7745098544296179864}
   - component: {fileID: 5294641133945219071}
   - component: {fileID: 3098135084208999246}
-  - component: {fileID: 7770720035036474694}
   - component: {fileID: 2982583603674653509}
   - component: {fileID: 1486499032483850537}
   - component: {fileID: 4293826906561869365}
+  - component: {fileID: 8694491212353911221}
   m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
@@ -251,22 +251,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12514114, y: 0.026046038}
   m_Size: {x: 1.5549393, y: 3.947908}
   m_Direction: 0
---- !u!114 &7770720035036474694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8833928722074651852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c7f4e2b7d114e7a93cd59c9a31501d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 5
-  clifEdgeZone: {fileID: 0}
-  _walkDirection: 0
-  walkDirectionVector: {x: 0, y: 0}
 --- !u!114 &2982583603674653509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,3 +321,20 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &8694491212353911221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833928722074651852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf8877a3310944b69b6063749e1e2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 5
+  attackZone: {fileID: 0}
+  _walkDirection: 0
+  walkDirectionVector: {x: 1, y: 0}
+  _hasTarget: 0
