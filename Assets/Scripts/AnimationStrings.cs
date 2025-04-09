@@ -13,6 +13,6 @@ internal class AnimationStrings
     internal static string jump = "jump";
     internal static string attack = "attack";
     internal static string isOnWall = "isOnWall";
-    
+    internal static string hasTarget = "hasTarget";
 
 }
