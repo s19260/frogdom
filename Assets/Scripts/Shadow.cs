@@ -11,13 +11,12 @@ public class Shadow : MonoBehaviour
 
     public float walkSpeed = 5f;
     public DetectionZone attackZone;
-    private Animator animator;
+    Animator animator;
 
     [SerializeField] public WalkableDirection _walkDirection;
 
     public Vector2 walkDirectionVector = Vector2.right;
 
-    public bool _hasTarget;
 
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
@@ -48,6 +47,8 @@ public class Shadow : MonoBehaviour
         }
     }
 
+    public bool _hasTarget;
+
     public bool HasTarget
     {
         get => _hasTarget;
@@ -62,6 +63,7 @@ public class Shadow : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()

@@ -333,8 +333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf8877a3310944b69b6063749e1e2ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  attackZone: {fileID: 0}
+  walkSpeed: 2
+  attackZone: {fileID: 5576102583144282470}
   _walkDirection: 0
   walkDirectionVector: {x: 1, y: 0}
   _hasTarget: 0
