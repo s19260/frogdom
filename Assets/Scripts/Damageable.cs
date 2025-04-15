@@ -83,7 +83,6 @@ public class Damageable : MonoBehaviour
             }
             timeSinceHit += Time.deltaTime;
         }
-        Hit(25);
     }
 
     public void Hit(int damage)
