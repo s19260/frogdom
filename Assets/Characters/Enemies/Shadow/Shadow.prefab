@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5440599998128330521}
   - component: {fileID: 4052014407856336961}
   - component: {fileID: 5576102583144282470}
+  - component: {fileID: 8731129032813248788}
   m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
@@ -93,6 +94,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectedColliders: []
   colliderCount: 0
+--- !u!114 &8731129032813248788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512204217895064154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108245173ee9646ac8cd844fcb6fa331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 100
+  _isAlive: 1
+  isInvincible: 0
+  invincibleTime: 0.25
 --- !u!1 &8833928722074651852
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +127,7 @@ GameObject:
   - component: {fileID: 1486499032483850537}
   - component: {fileID: 4293826906561869365}
   - component: {fileID: 8694491212353911221}
+  - component: {fileID: 965775006002642389}
   m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
@@ -338,3 +357,15 @@ MonoBehaviour:
   _walkDirection: 0
   walkDirectionVector: {x: 1, y: 0}
   _hasTarget: 0
+--- !u!114 &965775006002642389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833928722074651852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee86edf101f2e434a8bb30c399ce0d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

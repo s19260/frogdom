@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour
     public float jumpInpulse = 60f;
 
 
-    [SerializeField] private bool _isMoving;
+    [SerializeField] 
+    private bool _isMoving;
 
-    [SerializeField] private bool _isRunning;
+    [SerializeField] 
+    private bool _isRunning;
 
     public bool _isFacingRight = true;
     private Animator animator;
@@ -41,6 +43,22 @@ public class PlayerController : MonoBehaviour
         {
             _isMoving = value;
             animator.SetBool(AnimationStrings.isMoving, value);
+        }
+    }
+
+    public bool CanMove
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
+
+    public bool IsAlive
+    {
+        get
+        {
+            return animator.GetBool(AnimationStrings.isAlive);
         }
     }
 
@@ -81,9 +99,15 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        IsMoving = moveInput != Vector2.zero;
-
-        SetFacingDirection(moveInput);
+        if (IsAlive)
+        {
+            IsMoving = moveInput != Vector2.zero;
+            SetFacingDirection(moveInput);
+        }
+        else
+        {
+            IsMoving = false;
+        }
     }
 
     public void SetFacingDirection(Vector2 moveInput)
