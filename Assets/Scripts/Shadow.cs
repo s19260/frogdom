@@ -70,9 +70,14 @@ public class Shadow : MonoBehaviour
     {
     }
 
+    private float attackDelay = 2f;
+    private float timeSinceHit = 0;
+
     private void Update()
     {
+        
         HasTarget = attackZone.detectedColliders.Count > 0;
+        
     }
 
     private void FixedUpdate()

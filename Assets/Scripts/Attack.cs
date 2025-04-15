@@ -5,7 +5,8 @@ public class Attack : MonoBehaviour
 {
     private Collider2D attackCollider;
 
-    public int attackDamage = 40;
+    public Vector2 knockback = Vector2.zero;
+    public int attackDamage = 50;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,7 +15,10 @@ public class Attack : MonoBehaviour
 
         if (damageable != null)
         {
-            damageable.Hit(attackDamage);
+            bool gotHit = damageable.Hit(attackDamage, knockback);
+            if (gotHit){
+            Debug.Log(collision.name + " hit for " + attackDamage);
+            }
         }
     }
 }
