@@ -123,11 +123,11 @@ GameObject:
   - component: {fileID: 7745098544296179864}
   - component: {fileID: 5294641133945219071}
   - component: {fileID: 3098135084208999246}
-  - component: {fileID: 2982583603674653509}
   - component: {fileID: 1486499032483850537}
+  - component: {fileID: 2982583603674653509}
   - component: {fileID: 4293826906561869365}
   - component: {fileID: 8694491212353911221}
-  - component: {fileID: 965775006002642389}
+  - component: {fileID: 2451750056985156840}
   m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
@@ -270,6 +270,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12514114, y: 0.026046038}
   m_Size: {x: 1.5549393, y: 3.947908}
   m_Direction: 0
+--- !u!95 &1486499032483850537
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833928722074651852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c1f84af4beb140b0a192443f398727f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2982583603674653509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,28 +324,6 @@ MonoBehaviour:
   wallCheckDirection: {x: 0, y: 0}
   _isGrounded: 0
   _isOnWall: 0
---- !u!95 &1486499032483850537
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8833928722074651852}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0c1f84af4beb140b0a192443f398727f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!111 &4293826906561869365
 Animation:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
   _walkDirection: 0
   walkDirectionVector: {x: 1, y: 0}
   _hasTarget: 0
---- !u!114 &965775006002642389
+--- !u!114 &2451750056985156840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,6 +366,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8833928722074651852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee86edf101f2e434a8bb30c399ce0d17, type: 3}
+  m_Script: {fileID: 11500000, guid: 108245173ee9646ac8cd844fcb6fa331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 100
+  _isAlive: 1
+  isInvincible: 0
+  invincibleTime: 0.25

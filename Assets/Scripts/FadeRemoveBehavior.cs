@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FadeRemoveBehavior : StateMachineBehaviour
@@ -5,7 +7,7 @@ public class FadeRemoveBehavior : StateMachineBehaviour
     public float fadeTime = 0.5f;
     private float timeElapsed = 0;
     SpriteRenderer spriteRenderer;
-    private GameObject objToRemove;
+    GameObject objToRemove;
     Color originalColor;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -15,13 +17,13 @@ public class FadeRemoveBehavior : StateMachineBehaviour
         objToRemove = animator.gameObject;
     }
 
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timeElapsed += Time.deltaTime;
-        float newApha = originalColor.a * (1 - timeElapsed / fadeTime);
+        float newApha = originalColor.a * (1 - (timeElapsed / fadeTime));
         
         spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, newApha);
-        if (timeElapsed >= fadeTime)
+        if (timeElapsed > fadeTime)
         {
             Destroy(objToRemove);
         }
