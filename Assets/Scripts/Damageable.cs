@@ -86,6 +86,16 @@ public class Damageable : MonoBehaviour
             timeSinceHit += Time.deltaTime;
         }
     }
+    
+    public bool IsHit {
+        get
+        {
+            return animator.GetBool(AnimationStrings.isHit);
+        }
+        set
+        {
+            animator.SetBool(AnimationStrings.isHit, value);
+        } }
 
     public bool Hit(int damage, Vector2 knockback)
     {
@@ -93,6 +103,7 @@ public class Damageable : MonoBehaviour
         {
             Health -= damage;
             isInvincible = true;
+            IsHit = true;
             damageableHit?.Invoke(damage, knockback);
             return true;
         }

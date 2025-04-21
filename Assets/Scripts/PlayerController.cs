@@ -137,4 +137,9 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started) animator.SetTrigger(AnimationStrings.attack);
     }
+
+    public void onHit(int damage, Vector2 knockback)
+    {
+        rb.linearVelocity = new Vector2(knockback.x, rb.linearVelocity.y + knockback.y);
+    }
 }
