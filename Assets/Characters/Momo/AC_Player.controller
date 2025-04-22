@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   booleanName: canMove
-  setOnStateMachineEnterAndExit: 0
+  setOnStateMachineEnterAndExit: 1
   trueWhileInMachine: 1
   setOnStateEnterAndExit: 0
   trueWhileInState: 1
@@ -689,7 +689,7 @@ AnimatorStateMachine:
     m_Position: {x: 210, y: -30, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: -121375781407429679}
-    m_Position: {x: 210, y: 160, z: 0}
+    m_Position: {x: 210, y: 190, z: 0}
   m_AnyStateTransitions:
   - {fileID: 4834169470564079947}
   - {fileID: 8529456003896533902}
