@@ -494,10 +494,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   booleanName: canMove
-  setOnStateMachineEnterAndExit: 1
-  trueWhileInMachine: 1
-  setOnStateEnterAndExit: 0
-  trueWhileInState: 1
+  setOnStateMachineEnterAndExit: 0
+  trueWhileInMachine: 0
+  setOnStateEnter: 0
+  setOnStateExit: 0
+  trueWhileInState: 0
+  updateOnState: 0
+  updateOnStateMachine: 0
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
