@@ -256,3 +256,5 @@
 2025-04-23 12:23:36 - Key Pressed: Space
 2025-04-23 12:23:36 - Key Pressed: D
 2025-04-23 12:23:36 - Key Pressed: Space
+2025-04-24 10:08:25 - Key Pressed: A
+2025-04-24 10:08:25 - Key Pressed: Space
