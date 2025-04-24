@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,7 +105,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,7 +127,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,7 +149,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,12 +166,12 @@ TextureImporter:
       name: Desert Tileset balanced_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 224
+        x: 16
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -188,12 +188,12 @@ TextureImporter:
       name: Desert Tileset balanced_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
+        x: 32
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: Desert Tileset balanced_5
       rect:
         serializedVersion: 2
-        x: 144
-        y: 224
+        x: 48
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: Desert Tileset balanced_6
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
+        x: 80
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Desert Tileset balanced_7
       rect:
         serializedVersion: 2
-        x: 176
-        y: 224
+        x: 96
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: Desert Tileset balanced_8
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
+        x: 144
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: Desert Tileset balanced_9
       rect:
         serializedVersion: 2
-        x: 208
-        y: 224
+        x: 160
+        y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: Desert Tileset balanced_10
       rect:
         serializedVersion: 2
-        x: 16
+        x: 176
         y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,12 +342,12 @@ TextureImporter:
       name: Desert Tileset balanced_11
       rect:
         serializedVersion: 2
-        x: 32
+        x: 192
         y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,12 +364,12 @@ TextureImporter:
       name: Desert Tileset balanced_12
       rect:
         serializedVersion: 2
-        x: 48
+        x: 208
         y: 208
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,19 +386,19 @@ TextureImporter:
       name: Desert Tileset balanced_13
       rect:
         serializedVersion: 2
-        x: 80
-        y: 208
+        x: 16
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bd3e9333e63f9a43a7038b6935c416a
+      spriteID: 14478148edbeafb48a6bf031eb805e27
       internalID: -1884866155
       vertices: []
       indices: 
@@ -408,19 +408,19 @@ TextureImporter:
       name: Desert Tileset balanced_14
       rect:
         serializedVersion: 2
-        x: 96
-        y: 208
+        x: 32
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb5e5708891b8244b20276198c10a38
+      spriteID: 2a6aa0561bda89444b8a86704db158f6
       internalID: -955751288
       vertices: []
       indices: 
@@ -430,19 +430,19 @@ TextureImporter:
       name: Desert Tileset balanced_15
       rect:
         serializedVersion: 2
-        x: 144
-        y: 208
+        x: 48
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26d5278c32e63a419cff877259839e3
+      spriteID: 164d1f026f554314ba1696b9a32b792e
       internalID: -56797563
       vertices: []
       indices: 
@@ -452,19 +452,19 @@ TextureImporter:
       name: Desert Tileset balanced_16
       rect:
         serializedVersion: 2
-        x: 160
-        y: 208
+        x: 80
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5ad69c7941a7e84f9ac1a36656f40e0
+      spriteID: 39a16b28dca511344b3d68d402a29673
       internalID: -1564660289
       vertices: []
       indices: 
@@ -474,19 +474,19 @@ TextureImporter:
       name: Desert Tileset balanced_17
       rect:
         serializedVersion: 2
-        x: 176
-        y: 208
+        x: 96
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06fa9def86942624b82faf4967c92ed0
+      spriteID: d40f973b8d0e08f46935c56932b7592e
       internalID: 1590364145
       vertices: []
       indices: 
@@ -496,19 +496,19 @@ TextureImporter:
       name: Desert Tileset balanced_18
       rect:
         serializedVersion: 2
-        x: 192
-        y: 208
+        x: 144
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cee960deef4e96d499d5d6a2c50f1c0f
+      spriteID: 0a6f4ccbb102a70438d21c13a2d96e0f
       internalID: 909693563
       vertices: []
       indices: 
@@ -518,19 +518,19 @@ TextureImporter:
       name: Desert Tileset balanced_19
       rect:
         serializedVersion: 2
-        x: 208
-        y: 208
+        x: 160
+        y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c06c331fc544ded49b3bea09906ed223
+      spriteID: 6cf58fd6d4f740544b1d933d7780e296
       internalID: -1569974356
       vertices: []
       indices: 
@@ -540,19 +540,19 @@ TextureImporter:
       name: Desert Tileset balanced_20
       rect:
         serializedVersion: 2
-        x: 16
+        x: 176
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d39186c1e8c63bb4999b48a6748f774e
+      spriteID: 97d127759864a1247a5fd7c26e8bd67e
       internalID: 1302173901
       vertices: []
       indices: 
@@ -562,19 +562,19 @@ TextureImporter:
       name: Desert Tileset balanced_21
       rect:
         serializedVersion: 2
-        x: 32
+        x: 192
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59a7a645ff489ab458562314656b0b1c
+      spriteID: e1942ff3bf25e3f469d60b50769ec87e
       internalID: 1112346785
       vertices: []
       indices: 
@@ -584,19 +584,19 @@ TextureImporter:
       name: Desert Tileset balanced_22
       rect:
         serializedVersion: 2
-        x: 48
+        x: 208
         y: 192
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab5c03e32355f8c45a7d57842c0936e5
+      spriteID: f12986a4038ed744cb70e1503164526c
       internalID: -2051300381
       vertices: []
       indices: 
@@ -606,19 +606,19 @@ TextureImporter:
       name: Desert Tileset balanced_23
       rect:
         serializedVersion: 2
-        x: 80
-        y: 192
+        x: 16
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7603f93f1277ac146833773ed430f261
+      spriteID: ea0d438ce82d04240b05659093e361e5
       internalID: 945139721
       vertices: []
       indices: 
@@ -628,19 +628,19 @@ TextureImporter:
       name: Desert Tileset balanced_24
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
+        x: 32
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 097ecd698bf84be409f82020cb5bd829
+      spriteID: fa9e449e2e65efa47bffb85c3e23d19d
       internalID: 1918969540
       vertices: []
       indices: 
@@ -650,19 +650,19 @@ TextureImporter:
       name: Desert Tileset balanced_25
       rect:
         serializedVersion: 2
-        x: 144
-        y: 192
+        x: 48
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 335accd763b664c4eb7d84ae6ff06af7
+      spriteID: d633b2e8ae46954458574e32fc42e2b0
       internalID: -2057557247
       vertices: []
       indices: 
@@ -672,19 +672,19 @@ TextureImporter:
       name: Desert Tileset balanced_26
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
+        x: 64
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c067deddbf86734d9a32e2f215ca1cb
+      spriteID: 986afbbb076e1bb40bf18fa003c9f030
       internalID: 1818053520
       vertices: []
       indices: 
@@ -694,19 +694,19 @@ TextureImporter:
       name: Desert Tileset balanced_27
       rect:
         serializedVersion: 2
-        x: 176
-        y: 192
+        x: 80
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fa8bf8d6cecebd42b5e4825c7fd918a
+      spriteID: 93c1f93fa0ad1354286324034c6681d1
       internalID: -1237783148
       vertices: []
       indices: 
@@ -716,19 +716,19 @@ TextureImporter:
       name: Desert Tileset balanced_28
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 96
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dc315b3ae865a14dafdd7a4269a42dc
+      spriteID: de6cb0cf9363a4547a98081205c3d4bb
       internalID: -1090350953
       vertices: []
       indices: 
@@ -738,19 +738,19 @@ TextureImporter:
       name: Desert Tileset balanced_29
       rect:
         serializedVersion: 2
-        x: 208
-        y: 192
+        x: 112
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0083449f41f93d54db562e1cce3f0a7f
+      spriteID: 571fb365cba72294ebb0f57aabb1ca96
       internalID: 2014413321
       vertices: []
       indices: 
@@ -760,19 +760,19 @@ TextureImporter:
       name: Desert Tileset balanced_30
       rect:
         serializedVersion: 2
-        x: 16
-        y: 176
+        x: 144
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd6c2062a767f244889c78f85168ef0d
+      spriteID: 0c8981c6ec85bb74397bdd7661d861f8
       internalID: -22112053
       vertices: []
       indices: 
@@ -782,19 +782,19 @@ TextureImporter:
       name: Desert Tileset balanced_31
       rect:
         serializedVersion: 2
-        x: 32
-        y: 176
+        x: 160
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5bb459ceadf63b4f86e7eff3a810036
+      spriteID: 8bed85cd267d0f044ae4ecf766c3c8a5
       internalID: 342765815
       vertices: []
       indices: 
@@ -804,19 +804,19 @@ TextureImporter:
       name: Desert Tileset balanced_32
       rect:
         serializedVersion: 2
-        x: 48
-        y: 176
+        x: 176
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d884d8c57ee357e46b73417dad69f4b7
+      spriteID: 627eb9d3aa70b404e8410c3a7f8e6fdc
       internalID: 1648159898
       vertices: []
       indices: 
@@ -826,19 +826,19 @@ TextureImporter:
       name: Desert Tileset balanced_33
       rect:
         serializedVersion: 2
-        x: 64
-        y: 176
+        x: 208
+        y: 160
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f3adff420df91b4397364f8b12a51d8
+      spriteID: e73fd4b0747d6e647870527ba1646b0b
       internalID: 1943994590
       vertices: []
       indices: 
@@ -848,19 +848,19 @@ TextureImporter:
       name: Desert Tileset balanced_34
       rect:
         serializedVersion: 2
-        x: 80
-        y: 176
+        x: 16
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f6fbaa223026046af1c896592d3fb6
+      spriteID: c1bf496369db76a438f21d87af733833
       internalID: 536886010
       vertices: []
       indices: 
@@ -870,19 +870,19 @@ TextureImporter:
       name: Desert Tileset balanced_35
       rect:
         serializedVersion: 2
-        x: 96
-        y: 176
+        x: 32
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a838da04b546714992c8bb22fe00ff2
+      spriteID: 2f65833ba0357fe48b09715f1fb9e767
       internalID: 713542115
       vertices: []
       indices: 
@@ -892,19 +892,19 @@ TextureImporter:
       name: Desert Tileset balanced_36
       rect:
         serializedVersion: 2
-        x: 112
-        y: 176
+        x: 48
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88277f7e60e6634dbc11f43962b9085
+      spriteID: 842316908b6f57840b83426881baf636
       internalID: 73482617
       vertices: []
       indices: 
@@ -914,19 +914,19 @@ TextureImporter:
       name: Desert Tileset balanced_37
       rect:
         serializedVersion: 2
-        x: 144
-        y: 176
+        x: 64
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b19c8096489d1bb448c78f5ee569b218
+      spriteID: 97e6c51a417ed0f48b0506f2931f4149
       internalID: 1397711361
       vertices: []
       indices: 
@@ -936,19 +936,19 @@ TextureImporter:
       name: Desert Tileset balanced_38
       rect:
         serializedVersion: 2
-        x: 160
-        y: 176
+        x: 80
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d463bc30c2928b46b765be8f3889cd0
+      spriteID: 84aa66a4e4ef24d40ba296bbc71221ad
       internalID: -1532372492
       vertices: []
       indices: 
@@ -958,19 +958,19 @@ TextureImporter:
       name: Desert Tileset balanced_39
       rect:
         serializedVersion: 2
-        x: 176
-        y: 176
+        x: 96
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c0ddc71af95c1f46973516a52dc1b71
+      spriteID: 87070318cd13d2840976031f54a9b26a
       internalID: -1507553254
       vertices: []
       indices: 
@@ -980,19 +980,19 @@ TextureImporter:
       name: Desert Tileset balanced_40
       rect:
         serializedVersion: 2
-        x: 208
-        y: 176
+        x: 112
+        y: 144
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551a4a15c40f8e944872cc23ef3241e5
+      spriteID: a43471d55435b0142bef5ee411d2fc72
       internalID: -1371590745
       vertices: []
       indices: 
@@ -1003,18 +1003,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a070526c1d036b4d8836b7d84876597
+      spriteID: 9614e7a4fdbfe8340baaf4b716d444f0
       internalID: -350523835
       vertices: []
       indices: 
@@ -1025,18 +1025,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea84d0fb911e7ec46b4bdee478c14941
+      spriteID: 43f35540eb98b3f41841c9f4bd2e12f0
       internalID: -434829002
       vertices: []
       indices: 
@@ -1047,18 +1047,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71859ba7adfb46a4eb85e0d77126aee7
+      spriteID: 9cdcaf086d64da54fab3b61bbccd26ef
       internalID: -110032848
       vertices: []
       indices: 
@@ -1069,18 +1069,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3394bdc69cb0b4489882b080a17f074
+      spriteID: 0419b69f8ce34d044aad75b3ca248998
       internalID: 52816226
       vertices: []
       indices: 
@@ -1091,18 +1091,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4a036ee544fc349b1a7c6cc224b6c9
+      spriteID: 49d20d6651e9e9f4cbec8b5f00db4d40
       internalID: -1510254235
       vertices: []
       indices: 
@@ -1113,18 +1113,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e1c4386908977b498fc55420b9f7125
+      spriteID: 8477d70a6dd33814f942677ae97762d2
       internalID: -872340608
       vertices: []
       indices: 
@@ -1135,18 +1135,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 877c51eea69102b4c923d325855d698d
+      spriteID: 38cfde75d1234b542bf87a48ede8ea84
       internalID: -159711738
       vertices: []
       indices: 
@@ -1157,18 +1157,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05ca9de3712808b458b51662315b3102
+      spriteID: f6f46e996b527344eadd77e223f8b6e5
       internalID: -1475757611
       vertices: []
       indices: 
@@ -1179,18 +1179,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a0b7ce0e51caf4993fe7f24219a14d
+      spriteID: 347c564800c279f46b2ed3b524f43a3c
       internalID: -935581131
       vertices: []
       indices: 
@@ -1201,18 +1201,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 160
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b6e59146d02fcc4f824919aff124b89
+      spriteID: 515547914555b694cbd5a5b8f7f2bd88
       internalID: 470779615
       vertices: []
       indices: 
@@ -1222,19 +1222,19 @@ TextureImporter:
       name: Desert Tileset balanced_51
       rect:
         serializedVersion: 2
-        x: 208
-        y: 160
+        x: 192
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3336c2a1f3c5544f9b2e2cab042ac1b
+      spriteID: 51e611508d2f78247bbac1db2f1a2ad5
       internalID: 84149130
       vertices: []
       indices: 
@@ -1244,19 +1244,19 @@ TextureImporter:
       name: Desert Tileset balanced_52
       rect:
         serializedVersion: 2
-        x: 16
-        y: 144
+        x: 208
+        y: 128
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f56666be4ffd3344ebcc3d173a97c958
+      spriteID: 64214f47155ce14438050d4f837bea97
       internalID: -1455774046
       vertices: []
       indices: 
@@ -1266,19 +1266,19 @@ TextureImporter:
       name: Desert Tileset balanced_53
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 48
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd37e1f866b3b9747a5f83d1c3a9778e
+      spriteID: 41f4a524ee919134088e0da0b8ccac26
       internalID: -193298787
       vertices: []
       indices: 
@@ -1288,19 +1288,19 @@ TextureImporter:
       name: Desert Tileset balanced_54
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 64
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd4907cb516ff4f46a60f01121651f01
+      spriteID: 565698e4341734d459c2d2ceddc83e2e
       internalID: -1162352314
       vertices: []
       indices: 
@@ -1310,19 +1310,19 @@ TextureImporter:
       name: Desert Tileset balanced_55
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
+        x: 80
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a8df4e10ffa7a4a8f59dd8324abc1d
+      spriteID: 1814f8cd3cd103e4eb108350f48fd144
       internalID: 249516045
       vertices: []
       indices: 
@@ -1332,19 +1332,19 @@ TextureImporter:
       name: Desert Tileset balanced_56
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
+        x: 96
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab0e326335b57df42a38de6eb2492f9e
+      spriteID: f8d8cc2ba0b6fdb4a9ab88c92efc0853
       internalID: 1986195176
       vertices: []
       indices: 
@@ -1354,19 +1354,19 @@ TextureImporter:
       name: Desert Tileset balanced_57
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
+        x: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b961672b11e851e4baa8ab7006bb2541
+      spriteID: 42f7c8731bee51344859896f52000c7d
       internalID: -1374428839
       vertices: []
       indices: 
@@ -1376,19 +1376,19 @@ TextureImporter:
       name: Desert Tileset balanced_58
       rect:
         serializedVersion: 2
-        x: 112
-        y: 144
+        x: 160
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98c3e41c4cbf29841885c79bb162ded0
+      spriteID: 82f6ea2e2cdbd784983d008cd0175f65
       internalID: 133938647
       vertices: []
       indices: 
@@ -1398,19 +1398,19 @@ TextureImporter:
       name: Desert Tileset balanced_59
       rect:
         serializedVersion: 2
-        x: 144
-        y: 144
+        x: 176
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c78425b6b53d7fb49a4de0227bfe5e74
+      spriteID: 2b8ce14ae8de01e4191c279d91adeadc
       internalID: -2009370963
       vertices: []
       indices: 
@@ -1420,19 +1420,19 @@ TextureImporter:
       name: Desert Tileset balanced_60
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
+        x: 192
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 990835777dfc91643ba8193cc595d789
+      spriteID: 3cc3c68e6beafbc4d84ec6f72f0ee6f8
       internalID: 1890236377
       vertices: []
       indices: 
@@ -1442,19 +1442,19 @@ TextureImporter:
       name: Desert Tileset balanced_61
       rect:
         serializedVersion: 2
-        x: 176
-        y: 144
+        x: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df9d72569070324a82a5da62035192c
+      spriteID: 954e23474726b3f46872315d0feed8f3
       internalID: 1509178552
       vertices: []
       indices: 
@@ -1464,19 +1464,19 @@ TextureImporter:
       name: Desert Tileset balanced_62
       rect:
         serializedVersion: 2
-        x: 192
-        y: 144
+        x: 224
+        y: 96
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bdc037db81e9cb458780ecdaf196442
+      spriteID: a0a8516237af74e4aac04b2f58ffe460
       internalID: 1592373844
       vertices: []
       indices: 
@@ -1486,19 +1486,19 @@ TextureImporter:
       name: Desert Tileset balanced_63
       rect:
         serializedVersion: 2
-        x: 208
-        y: 144
+        x: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c59f38a4b6f3ff442a2dfe9603c761a0
+      spriteID: 9fe6213d304a9584a979802cbae2c491
       internalID: -249393579
       vertices: []
       indices: 
@@ -1508,19 +1508,19 @@ TextureImporter:
       name: Desert Tileset balanced_64
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 32
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ee73ed4eef1bca4db59338e6223d7bb
+      spriteID: f66bbc5ee4ac7ae4fb0f8d4464e30387
       internalID: -408812940
       vertices: []
       indices: 
@@ -1530,19 +1530,19 @@ TextureImporter:
       name: Desert Tileset balanced_65
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 48
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29527f18d2885646a5ab226631d1289
+      spriteID: af47a80d7deb21f4e866191d2c16b4c5
       internalID: 438656691
       vertices: []
       indices: 
@@ -1552,19 +1552,19 @@ TextureImporter:
       name: Desert Tileset balanced_66
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 64
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3290bec72cb3f7149b6bb1adf10bf6d4
+      spriteID: 204f700c48fd3a24aa023501499d2481
       internalID: -987219833
       vertices: []
       indices: 
@@ -1574,19 +1574,19 @@ TextureImporter:
       name: Desert Tileset balanced_67
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 80
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc574cf664a1da1479e89e373e02a1e2
+      spriteID: af75bded0f540044abfe370f96f7f573
       internalID: -791926174
       vertices: []
       indices: 
@@ -1596,19 +1596,19 @@ TextureImporter:
       name: Desert Tileset balanced_68
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 96
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3493f1f10875bfd4dabf22057e2ed3fd
+      spriteID: 2b2891465ecc223438e6bf782df9f4ee
       internalID: 2033975801
       vertices: []
       indices: 
@@ -1618,19 +1618,19 @@ TextureImporter:
       name: Desert Tileset balanced_69
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 144
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab28cb2cc2fa96d4da0182589df604fd
+      spriteID: a0255c7d191315b47a55eb4a3dfefa5a
       internalID: -1084604362
       vertices: []
       indices: 
@@ -1640,19 +1640,19 @@ TextureImporter:
       name: Desert Tileset balanced_70
       rect:
         serializedVersion: 2
-        x: 112
-        y: 128
+        x: 160
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b4d91a11275ae44ba359e8094f7a95
+      spriteID: 0ee996860b45fd54fb8e53c23799c9e4
       internalID: -1337254312
       vertices: []
       indices: 
@@ -1662,19 +1662,19 @@ TextureImporter:
       name: Desert Tileset balanced_71
       rect:
         serializedVersion: 2
-        x: 144
-        y: 128
+        x: 176
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59ad9e7f447098b4db6c1ba5b250e873
+      spriteID: 4b3874d6e6bd8e34bbaec267bf099229
       internalID: 354619223
       vertices: []
       indices: 
@@ -1684,19 +1684,19 @@ TextureImporter:
       name: Desert Tileset balanced_72
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84142b97b0db1c24b94a4ced7142edd8
+      spriteID: c6b876b7fd46d8347b3d1b911d83e17e
       internalID: 150336443
       vertices: []
       indices: 
@@ -1706,19 +1706,19 @@ TextureImporter:
       name: Desert Tileset balanced_73
       rect:
         serializedVersion: 2
-        x: 176
-        y: 128
+        x: 208
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e5ae998fcbf62c418b960a370b2f27d
+      spriteID: 304599228f82220449339b6b5650fac6
       internalID: 2068738173
       vertices: []
       indices: 
@@ -1728,19 +1728,19 @@ TextureImporter:
       name: Desert Tileset balanced_74
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 224
+        y: 80
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a418145e456dfb4cb595c4ddccb5e09
+      spriteID: ae3de25bc7420d846b7749307c9b0c73
       internalID: -1830593250
       vertices: []
       indices: 
@@ -1750,19 +1750,19 @@ TextureImporter:
       name: Desert Tileset balanced_75
       rect:
         serializedVersion: 2
-        x: 208
-        y: 128
+        x: 16
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44e2a0790f051d840a692c29f94b482d
+      spriteID: d35adea0e293ef5468310012526b4f0a
       internalID: 1288958107
       vertices: []
       indices: 
@@ -1772,19 +1772,19 @@ TextureImporter:
       name: Desert Tileset balanced_76
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
+        x: 32
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b21c994e2575bae45a78dddc06470c7c
+      spriteID: 54069d3d92514114d91452d068e3e924
       internalID: -514452052
       vertices: []
       indices: 
@@ -1794,19 +1794,19 @@ TextureImporter:
       name: Desert Tileset balanced_77
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
+        x: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2e66e06fd8498c4bbb517a44603772c
+      spriteID: df2f11688af013847888a49742b2b787
       internalID: -1671403131
       vertices: []
       indices: 
@@ -1816,19 +1816,19 @@ TextureImporter:
       name: Desert Tileset balanced_78
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10468dcb8e6ac8941a9065e8180f8869
+      spriteID: 3f66347a1c55abf41ad7825eed0f6b1b
       internalID: -1060896127
       vertices: []
       indices: 
@@ -1839,18 +1839,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 112
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1393e82a3932554448f1d4708eacd499
+      spriteID: 80f6c004142848a408fcd449d07abe72
       internalID: 2094074626
       vertices: []
       indices: 
@@ -1860,19 +1860,19 @@ TextureImporter:
       name: Desert Tileset balanced_80
       rect:
         serializedVersion: 2
-        x: 144
-        y: 112
+        x: 112
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e2df17485f89a041a15c4cea4e66ebc
+      spriteID: 6a2e3c15217e3ca4eb93e3131e2b9957
       internalID: 1605801625
       vertices: []
       indices: 
@@ -1882,19 +1882,19 @@ TextureImporter:
       name: Desert Tileset balanced_81
       rect:
         serializedVersion: 2
-        x: 160
-        y: 112
+        x: 128
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f1aa835520ea084ead99ea06b79a0d2
+      spriteID: d8ced98ed7e0655488c3ac374e6f3f24
       internalID: 1987839025
       vertices: []
       indices: 
@@ -1904,19 +1904,19 @@ TextureImporter:
       name: Desert Tileset balanced_82
       rect:
         serializedVersion: 2
-        x: 176
-        y: 112
+        x: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492d226a2c0e059408041affe75eb2cd
+      spriteID: ac69f6141d3d0a44c923ceb100f3d830
       internalID: 1007812040
       vertices: []
       indices: 
@@ -1926,19 +1926,19 @@ TextureImporter:
       name: Desert Tileset balanced_83
       rect:
         serializedVersion: 2
-        x: 192
-        y: 112
+        x: 208
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30884b714a4c1a844971b99c5477ff6d
+      spriteID: 00d0dcfbead40a04793d00a81ba50b7f
       internalID: -2100602542
       vertices: []
       indices: 
@@ -1948,19 +1948,19 @@ TextureImporter:
       name: Desert Tileset balanced_84
       rect:
         serializedVersion: 2
-        x: 208
-        y: 112
+        x: 32
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a03d7220d89553f4fa2c6e5dbffc034a
+      spriteID: ea85373b3722f8b459b9a1c2e2144538
       internalID: -166528505
       vertices: []
       indices: 
@@ -1970,19 +1970,19 @@ TextureImporter:
       name: Desert Tileset balanced_85
       rect:
         serializedVersion: 2
-        x: 224
-        y: 112
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0250bcdd13cfa349846e05e37d3bb18
+      spriteID: ebc1b9a88c884f349807d2b09fd5435e
       internalID: -536921612
       vertices: []
       indices: 
@@ -1992,19 +1992,19 @@ TextureImporter:
       name: Desert Tileset balanced_86
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 160
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5368951f2cb12b94999b0887074e4302
+      spriteID: 0b9e7a40b28dc8948b85f9ec03290e19
       internalID: 1620085382
       vertices: []
       indices: 
@@ -2014,19 +2014,19 @@ TextureImporter:
       name: Desert Tileset balanced_87
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 192
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2dbc2899713c36429fab9c8738caf80
+      spriteID: d646ea22cb15747419caa21d3f627199
       internalID: -439961334
       vertices: []
       indices: 
@@ -2036,19 +2036,19 @@ TextureImporter:
       name: Desert Tileset balanced_88
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 208
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24b2fd9cb69c6794f84b6f472c3e64e8
+      spriteID: 72e303a1c6d211b4597d6f860c771e78
       internalID: -1311706104
       vertices: []
       indices: 
@@ -2058,19 +2058,19 @@ TextureImporter:
       name: Desert Tileset balanced_89
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 224
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2363e1b5e99864943b83106a9daaab9c
+      spriteID: d45cd203042051c449618eda60797368
       internalID: 1582793234
       vertices: []
       indices: 
@@ -2080,19 +2080,19 @@ TextureImporter:
       name: Desert Tileset balanced_90
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42fba08d666e9f3469e2faba29d52c93
+      spriteID: cba2d53e3bba7e74ba222308f84ff4d4
       internalID: 647441022
       vertices: []
       indices: 
@@ -2102,19 +2102,19 @@ TextureImporter:
       name: Desert Tileset balanced_91
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 908edaa89c34d5a46a0fc5e3c02d0d79
+      spriteID: b00c49b08b974314aa4721268cdd7f00
       internalID: 1594606766
       vertices: []
       indices: 
@@ -2124,19 +2124,19 @@ TextureImporter:
       name: Desert Tileset balanced_92
       rect:
         serializedVersion: 2
-        x: 144
-        y: 96
+        x: 160
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8ef252ac472ae047a739220b325dbe7
+      spriteID: dff462182808ae545bb16845073af5a0
       internalID: 14258416
       vertices: []
       indices: 
@@ -2146,988 +2146,20 @@ TextureImporter:
       name: Desert Tileset balanced_93
       rect:
         serializedVersion: 2
-        x: 160
-        y: 96
+        x: 208
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 998cf2603801a544082e34a9f9e1b12a
+      spriteID: db2c624cf5882da4c885dc05663d8ec9
       internalID: 2811049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_94
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41a85748acbd95947bb2e653783ec573
-      internalID: -1053040950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_95
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e62a1834bb678145ba526376cefca7c
-      internalID: 154786706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_96
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16e78a3c9f2bc60438dae81f68387dcd
-      internalID: -297890979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_97
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e6a69312f2427b4cb160c5271520a21
-      internalID: 17284321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_98
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfbe3d27c1adff44e94720fb7599252b
-      internalID: 1447931844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_99
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 749a71c68fca7e64491fb96fd2b7230b
-      internalID: 1629066970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_100
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3265fa4f426ee2145a6add1457c32e0e
-      internalID: -2050389553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_101
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d4526ee354281f42bc4fe16d800b49e
-      internalID: 1055556089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_102
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e31420062ffce8e4a90f363e4fc8c2c9
-      internalID: -1871866062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_103
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26d4b86d60c5aaa438539f58e2682626
-      internalID: 147444653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_104
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcc1e1d5bf1113c4da7f780057a63397
-      internalID: -2107114684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_105
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36164211d5d27a1448415bb6224b8158
-      internalID: -1968517700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_106
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb55bf39e81e71145bf9ce23cca7235e
-      internalID: -1505205073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_107
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f337a5765d83bf34093c5cbbbbe94804
-      internalID: -561102563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_108
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e295759120823f41bd584f844d39de5
-      internalID: 1058131780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_109
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e510771aa53cf954c98fa8d1baa2d308
-      internalID: -613155557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_110
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3e0aa8b1774cfe47a4824de262ebf96
-      internalID: -1404109893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_111
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b810763f0ca799c4198a8b00b90504db
-      internalID: -129764495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_112
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: baa942e9ca47af04f9da079cac7a6324
-      internalID: 1153164178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_113
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e22a63936b058e4ba4d658f172b1319
-      internalID: -1463556783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_114
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07c5d3852752bf746816a0a2917a3116
-      internalID: -245173067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_115
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e180955410153ec479de2dc5ce753fae
-      internalID: 2061573808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_116
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fcd369dad3d3e645a478bb91ff2adc4
-      internalID: 828125418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_117
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edb91e99d67901f4e88897be4078129b
-      internalID: 650842665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_118
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f31fdf4e4dfc684e9ba328000617e19
-      internalID: -1659178078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_119
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1d9817f62aa4dd46820712502da6cbf
-      internalID: -571999526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_120
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2407726e9b64f45449c01d400c9bdecb
-      internalID: -786524617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_121
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8562002474f8784fa2c4b31244f87a4
-      internalID: 948476502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_122
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19bf5576c18d7de47bfa16d591cdcf4a
-      internalID: 1301578923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_123
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bb992a706d0027408d509832e2d5dbc
-      internalID: -405399935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_124
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fdd032a6241cb94a92f1bd5d94be8b0
-      internalID: 1461148420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_125
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2ff69a0bd36c98439b57101f2146a3b
-      internalID: -1255027491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_126
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 298e397892779dc40aac8cd1f57a4a5a
-      internalID: -2058291388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_127
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0d79ecb497d7f74cb5788984fdb38f7
-      internalID: -1803245874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_128
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81b8f2b399e3b1745b95bfd54b6fdbfe
-      internalID: -189879924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_129
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9e02df4704c72d4d846f2fd9d5743a0
-      internalID: -1767244637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_130
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78b56a9de8bed4f429cb2779ecc00225
-      internalID: -253283415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_131
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 348abd24ac54de54da1a28452e1245f3
-      internalID: 1848903926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_132
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 553ba4765adc48a4fbcc522413b5097c
-      internalID: -1886819282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_133
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d028f6e00822fa44f9dc1dcf615b3db2
-      internalID: -1752118252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_134
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8a145e7f3227ca458ab050cea152bd5
-      internalID: 936045762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_135
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f67f7794adbbc874b953dc8497054859
-      internalID: -912095777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_136
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0eb4f34a320a3dc4691910b71fc9127b
-      internalID: -535012404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desert Tileset balanced_137
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d47519bd4863744ead8334cd6583e21
-      internalID: 1560347521
       vertices: []
       indices: 
       edges: []
@@ -3149,47 +2181,9 @@ TextureImporter:
       Desert Tileset balanced_0: 1833730045
       Desert Tileset balanced_1: 1939955309
       Desert Tileset balanced_10: 331510955
-      Desert Tileset balanced_100: -2050389553
-      Desert Tileset balanced_101: 1055556089
-      Desert Tileset balanced_102: -1871866062
-      Desert Tileset balanced_103: 147444653
-      Desert Tileset balanced_104: -2107114684
-      Desert Tileset balanced_105: -1968517700
-      Desert Tileset balanced_106: -1505205073
-      Desert Tileset balanced_107: -561102563
-      Desert Tileset balanced_108: 1058131780
-      Desert Tileset balanced_109: -613155557
       Desert Tileset balanced_11: -119574823
-      Desert Tileset balanced_110: -1404109893
-      Desert Tileset balanced_111: -129764495
-      Desert Tileset balanced_112: 1153164178
-      Desert Tileset balanced_113: -1463556783
-      Desert Tileset balanced_114: -245173067
-      Desert Tileset balanced_115: 2061573808
-      Desert Tileset balanced_116: 828125418
-      Desert Tileset balanced_117: 650842665
-      Desert Tileset balanced_118: -1659178078
-      Desert Tileset balanced_119: -571999526
       Desert Tileset balanced_12: -332681312
-      Desert Tileset balanced_120: -786524617
-      Desert Tileset balanced_121: 948476502
-      Desert Tileset balanced_122: 1301578923
-      Desert Tileset balanced_123: -405399935
-      Desert Tileset balanced_124: 1461148420
-      Desert Tileset balanced_125: -1255027491
-      Desert Tileset balanced_126: -2058291388
-      Desert Tileset balanced_127: -1803245874
-      Desert Tileset balanced_128: -189879924
-      Desert Tileset balanced_129: -1767244637
       Desert Tileset balanced_13: -1884866155
-      Desert Tileset balanced_130: -253283415
-      Desert Tileset balanced_131: 1848903926
-      Desert Tileset balanced_132: -1886819282
-      Desert Tileset balanced_133: -1752118252
-      Desert Tileset balanced_134: 936045762
-      Desert Tileset balanced_135: -912095777
-      Desert Tileset balanced_136: -535012404
-      Desert Tileset balanced_137: 1560347521
       Desert Tileset balanced_14: -955751288
       Desert Tileset balanced_15: -56797563
       Desert Tileset balanced_16: -1564660289
@@ -3278,12 +2272,6 @@ TextureImporter:
       Desert Tileset balanced_91: 1594606766
       Desert Tileset balanced_92: 14258416
       Desert Tileset balanced_93: 2811049
-      Desert Tileset balanced_94: -1053040950
-      Desert Tileset balanced_95: 154786706
-      Desert Tileset balanced_96: -297890979
-      Desert Tileset balanced_97: 17284321
-      Desert Tileset balanced_98: 1447931844
-      Desert Tileset balanced_99: 1629066970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
