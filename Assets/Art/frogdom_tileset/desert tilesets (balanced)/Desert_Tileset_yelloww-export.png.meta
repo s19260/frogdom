@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -606,8 +606,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_23
       rect:
         serializedVersion: 2
-        x: 224
-        y: 176
+        x: 16
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -628,7 +628,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_24
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 160
         width: 16
         height: 16
@@ -650,7 +650,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_25
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 160
         width: 16
         height: 16
@@ -672,7 +672,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_26
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 160
         width: 16
         height: 16
@@ -694,7 +694,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_27
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 160
         width: 16
         height: 16
@@ -716,7 +716,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_28
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 160
         width: 16
         height: 16
@@ -738,7 +738,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_29
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 160
         width: 16
         height: 16
@@ -760,7 +760,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_30
       rect:
         serializedVersion: 2
-        x: 112
+        x: 144
         y: 160
         width: 16
         height: 16
@@ -782,8 +782,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_31
       rect:
         serializedVersion: 2
-        x: 144
-        y: 161
+        x: 160
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -804,8 +804,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_32
       rect:
         serializedVersion: 2
-        x: 160
-        y: 161
+        x: 176
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -826,8 +826,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_33
       rect:
         serializedVersion: 2
-        x: 176
-        y: 161
+        x: 208
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -848,8 +848,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_34
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
+        x: 16
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -870,7 +870,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_35
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 144
         width: 16
         height: 16
@@ -892,7 +892,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_36
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 144
         width: 16
         height: 16
@@ -914,7 +914,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_37
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 144
         width: 16
         height: 16
@@ -936,7 +936,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_38
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 144
         width: 16
         height: 16
@@ -958,7 +958,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_39
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 144
         width: 16
         height: 16
@@ -980,7 +980,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_40
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 144
         width: 16
         height: 16
@@ -1002,8 +1002,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_41
       rect:
         serializedVersion: 2
-        x: 112
-        y: 144
+        x: 16
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -1024,8 +1024,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_42
       rect:
         serializedVersion: 2
-        x: 224
-        y: 144
+        x: 32
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -1046,7 +1046,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_43
       rect:
         serializedVersion: 2
-        x: 16
+        x: 48
         y: 128
         width: 16
         height: 16
@@ -1068,7 +1068,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_44
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 128
         width: 16
         height: 16
@@ -1090,7 +1090,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_45
       rect:
         serializedVersion: 2
-        x: 48
+        x: 80
         y: 128
         width: 16
         height: 16
@@ -1112,7 +1112,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_46
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 128
         width: 16
         height: 16
@@ -1134,7 +1134,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_47
       rect:
         serializedVersion: 2
-        x: 80
+        x: 112
         y: 128
         width: 16
         height: 16
@@ -1156,7 +1156,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_48
       rect:
         serializedVersion: 2
-        x: 96
+        x: 144
         y: 128
         width: 16
         height: 16
@@ -1178,7 +1178,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_49
       rect:
         serializedVersion: 2
-        x: 112
+        x: 160
         y: 128
         width: 16
         height: 16
@@ -1200,7 +1200,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_50
       rect:
         serializedVersion: 2
-        x: 144
+        x: 176
         y: 128
         width: 16
         height: 16
@@ -1222,7 +1222,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_51
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 128
         width: 16
         height: 16
@@ -1244,7 +1244,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_52
       rect:
         serializedVersion: 2
-        x: 176
+        x: 208
         y: 128
         width: 16
         height: 16
@@ -1266,8 +1266,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_53
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 48
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1288,8 +1288,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_54
       rect:
         serializedVersion: 2
-        x: 208
-        y: 128
+        x: 64
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1310,7 +1310,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_55
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 96
         width: 16
         height: 16
@@ -1332,7 +1332,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_56
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 96
         width: 16
         height: 16
@@ -1354,7 +1354,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_57
       rect:
         serializedVersion: 2
-        x: 96
+        x: 144
         y: 96
         width: 16
         height: 16
@@ -1376,7 +1376,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_58
       rect:
         serializedVersion: 2
-        x: 112
+        x: 160
         y: 96
         width: 16
         height: 16
@@ -1398,7 +1398,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_59
       rect:
         serializedVersion: 2
-        x: 144
+        x: 176
         y: 96
         width: 16
         height: 16
@@ -1420,7 +1420,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_60
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 96
         width: 16
         height: 16
@@ -1442,7 +1442,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_61
       rect:
         serializedVersion: 2
-        x: 176
+        x: 208
         y: 96
         width: 16
         height: 16
@@ -1464,7 +1464,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_62
       rect:
         serializedVersion: 2
-        x: 192
+        x: 224
         y: 96
         width: 16
         height: 16
@@ -1486,8 +1486,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_63
       rect:
         serializedVersion: 2
-        x: 208
-        y: 96
+        x: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1508,8 +1508,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_64
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
+        x: 32
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1530,7 +1530,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_65
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 80
         width: 16
         height: 16
@@ -1552,7 +1552,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_66
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 80
         width: 16
         height: 16
@@ -1574,7 +1574,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_67
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 80
         width: 16
         height: 16
@@ -1596,7 +1596,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_68
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 80
         width: 16
         height: 16
@@ -1618,7 +1618,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_69
       rect:
         serializedVersion: 2
-        x: 96
+        x: 144
         y: 80
         width: 16
         height: 16
@@ -1640,7 +1640,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_70
       rect:
         serializedVersion: 2
-        x: 112
+        x: 160
         y: 80
         width: 16
         height: 16
@@ -1662,7 +1662,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_71
       rect:
         serializedVersion: 2
-        x: 144
+        x: 176
         y: 80
         width: 16
         height: 16
@@ -1684,7 +1684,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_72
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 80
         width: 16
         height: 16
@@ -1706,7 +1706,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_73
       rect:
         serializedVersion: 2
-        x: 176
+        x: 208
         y: 80
         width: 16
         height: 16
@@ -1728,7 +1728,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_74
       rect:
         serializedVersion: 2
-        x: 192
+        x: 224
         y: 80
         width: 16
         height: 16
@@ -1750,8 +1750,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_75
       rect:
         serializedVersion: 2
-        x: 208
-        y: 80
+        x: 16
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1772,8 +1772,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_76
       rect:
         serializedVersion: 2
-        x: 224
-        y: 80
+        x: 32
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1794,7 +1794,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_77
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 64
         width: 16
         height: 16
@@ -1816,7 +1816,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_78
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 64
         width: 16
         height: 16
@@ -1838,8 +1838,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_79
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 96
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1860,8 +1860,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_80
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
+        x: 112
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1882,7 +1882,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_81
       rect:
         serializedVersion: 2
-        x: 144
+        x: 128
         y: 48
         width: 16
         height: 16
@@ -1926,7 +1926,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_83
       rect:
         serializedVersion: 2
-        x: 176
+        x: 208
         y: 48
         width: 16
         height: 16
@@ -1948,8 +1948,8 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_84
       rect:
         serializedVersion: 2
-        x: 208
-        y: 48
+        x: 32
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -1970,7 +1970,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_85
       rect:
         serializedVersion: 2
-        x: 80
+        x: 48
         y: 32
         width: 16
         height: 16
@@ -1992,7 +1992,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_86
       rect:
         serializedVersion: 2
-        x: 96
+        x: 160
         y: 32
         width: 16
         height: 16
@@ -2080,7 +2080,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_90
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 16
         width: 16
         height: 16
@@ -2102,7 +2102,7 @@ TextureImporter:
       name: Desert_Tileset_yelloww-export_91
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 16
         width: 16
         height: 16
