@@ -84,6 +84,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
