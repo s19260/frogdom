@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Damageable : MonoBehaviour
 {
@@ -13,10 +14,11 @@ public class Damageable : MonoBehaviour
     public float invincibleTime = 2f;
     Animator animator;
     [SerializeField]
-    private int _maxHealth = 100;
+    private int _maxHealth = 3;
     [SerializeField]
-    private int _health = 100;
+    private int _health = 3;
     private string param_isAlive = "isAlive";
+    public GameObject[] hearts = new GameObject[3];
 
     public int MaxHealth
     {
@@ -76,6 +78,18 @@ public class Damageable : MonoBehaviour
 
     private void Update()
     {
+        if (_health < 1)
+        {
+            Destroy(hearts[0].gameObject);
+        }
+        else if (_health < 2)
+        {
+            Destroy(hearts[1].gameObject);
+        }
+        else if (_health < 3)
+        {
+            Destroy(hearts[2].gameObject);
+        }
         if (isInvincible)
         {
             if (timeSinceHit > invincibleTime)
@@ -84,6 +98,11 @@ public class Damageable : MonoBehaviour
                 timeSinceHit = 0;
             }
             timeSinceHit += Time.deltaTime;
+        }
+
+        if (!_isAlive)
+        {
+            SceneManager.LoadScene("GameplayScene");
         }
     }
     
