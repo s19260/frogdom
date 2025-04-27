@@ -14,12 +14,14 @@ public class Damageable : MonoBehaviour
     public float invincibleTime = 2f;
     Animator animator;
     [SerializeField]
-    private int _maxHealth = 3;
+    public int _maxHealth = 3;
     [SerializeField]
     private int _health = 3;
     private string param_isAlive = "isAlive";
     public GameObject[] hearts = new GameObject[3];
+    
 
+    
     public int MaxHealth
     {
         get
@@ -33,6 +35,7 @@ public class Damageable : MonoBehaviour
                 IsAlive = false;
         }
     }
+    
     
 
     public int Health {
@@ -52,6 +55,19 @@ public class Damageable : MonoBehaviour
         }
     }
 
+    public bool ModifyHealth(int healthChange)
+    {
+        if (_health < MaxHealth)
+        {
+            _health += healthChange;
+            _health = Math.Clamp(_health, 0, MaxHealth);
+            return true;
+            //zaszla zmiana
+        }
+        return false;
+        //nie zaszla zmiana
+    }
+    
 
     public bool IsAlive
     {

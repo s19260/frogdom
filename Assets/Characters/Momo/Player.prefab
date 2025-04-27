@@ -401,6 +401,10 @@ MonoBehaviour:
   invincibleTime: 0.25
   _maxHealth: 100
   _health: 100
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5938951351128711114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,3 +417,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7441ca9f629eb482b8bde05ec3b087c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputField: {fileID: 0}
