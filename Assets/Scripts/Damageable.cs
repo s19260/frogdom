@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class Damageable : MonoBehaviour
 {
@@ -16,11 +17,13 @@ public class Damageable : MonoBehaviour
     [SerializeField]
     public int _maxHealth = 3;
     [SerializeField]
-    private int _health = 3;
+    public int _health = 3;
+    [SerializeField]
+    public int _keys = 0;
     private string param_isAlive = "isAlive";
-    public GameObject[] hearts = new GameObject[3];
+    [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
+    [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
     
-
     
     public int MaxHealth
     {
@@ -67,6 +70,11 @@ public class Damageable : MonoBehaviour
         return false;
         //nie zaszla zmiana
     }
+
+    public void AddKey()
+    {
+        _keys++;
+    }
     
 
     public bool IsAlive
@@ -84,9 +92,15 @@ public class Damageable : MonoBehaviour
         }
     }
     Rigidbody2D rb;
+    
 
     void Start()
     {
+        if(CompareTag("Player")){
+            keysContainer[0].SetActive(false);
+            keysContainer[1].SetActive(false);
+            keysContainer[2].SetActive(false);
+        }
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         animator.SetBool(param_isAlive, IsAlive);
@@ -96,15 +110,15 @@ public class Damageable : MonoBehaviour
     {
         if (_health < 1)
         {
-            Destroy(hearts[0].gameObject);
+            heartsContainer[0].SetActive(false);
         }
-        else if (_health < 2)
+        else if (_health == 1)
         {
-            Destroy(hearts[1].gameObject);
+            heartsContainer[1].SetActive(false);
         }
-        else if (_health < 3)
+        else if (_health == 2)
         {
-            Destroy(hearts[2].gameObject);
+            heartsContainer[2].SetActive(false);
         }
         if (isInvincible)
         {

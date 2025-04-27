@@ -16,6 +16,10 @@ public class HealthPickup : MonoBehaviour
             
                 if (collidingDamageable && collidingDamageable.ModifyHealth(healthBonus))
                 {
+                    Debug.Log(collidingDamageable.heartsContainer[collidingDamageable._health-1]);
+                    collidingDamageable.heartsContainer[collidingDamageable._health-1].SetActive(true);
+
+
                     Destroy(this.gameObject);
                 }
             
