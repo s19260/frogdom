@@ -14,8 +14,8 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: PlatformerCrashCourse_Tutorial
-  defaultCursor: {fileID: 2800000, guid: 34c380623fd451f40b7b9a84a4d0634a, type: 3}
-  cursorHotspot: {x: 400, y: 200}
+  defaultCursor: {fileID: 2800000, guid: 5101d97e38ebb4211887e286f7d664e6, type: 3}
+  cursorHotspot: {x: 64, y: 44}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
