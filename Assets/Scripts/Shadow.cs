@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class Shadow : MonoBehaviour
 {
+
     public enum WalkableDirection
     {
         Right,
