@@ -108,6 +108,7 @@ public class Damageable : MonoBehaviour
 
     private void Update()
     {
+       if(CompareTag("Player"))
         if (_health < 1)
         {
             heartsContainer[0].SetActive(false);
@@ -130,7 +131,7 @@ public class Damageable : MonoBehaviour
             timeSinceHit += Time.deltaTime;
         }
 
-        if (!_isAlive)
+        if (!_isAlive && CompareTag("Player"))
         {
             SceneManager.LoadScene("GameplayScene");
         }
