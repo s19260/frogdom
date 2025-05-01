@@ -41853,8 +41853,8 @@ GameObject:
   - component: {fileID: 1599382325}
   - component: {fileID: 1599382324}
   m_Layer: 6
-  m_Name: End of the game sphere  (1)
-  m_TagString: Untagged
+  m_Name: Secret Level 1 teleport
+  m_TagString: SecretLevel1Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41971,7 +41971,7 @@ Transform:
   m_GameObject: {fileID: 1599382323}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.45, y: 3.33, z: 0}
+  m_LocalPosition: {x: 8.64, y: 5.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

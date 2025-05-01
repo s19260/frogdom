@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Checkpoint
+  - SecretLevel1Teleport
   layers:
   - Default
   - TransparentFX
