@@ -4,12 +4,15 @@ using UnityEngine.UIElements;
 
 public class SecretLevelEntrance : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject _targetObject;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-            Debug.Log("Secret Level Entrance " +other.transform.position);
+        Damageable collidingDamageable = other.GetComponentInParent<Damageable>();
+        if (other.CompareTag("Player") && collidingDamageable._keys >= 3)
         {
-            SceneManager.LoadScene("SecretLevel1");
+            if(_targetObject)
+                other.transform.position = _targetObject.transform.position;
         }
     }
 
