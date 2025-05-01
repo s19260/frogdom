@@ -23,8 +23,9 @@ public class Damageable : MonoBehaviour
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
     [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
+
     
-    
+
     public int MaxHealth
     {
         get
@@ -60,15 +61,15 @@ public class Damageable : MonoBehaviour
 
     public bool ModifyHealth(int healthChange)
     {
-        if (_health < MaxHealth)
+        if (_health <= MaxHealth)
         {
             _health += healthChange;
             _health = Math.Clamp(_health, 0, MaxHealth);
             return true;
             //zaszla zmiana
         }
-        return false;
-        //nie zaszla zmiana
+    return false;
+    //nie zaszla zmiana
     }
 
     public void AddKey()
@@ -131,10 +132,7 @@ public class Damageable : MonoBehaviour
             timeSinceHit += Time.deltaTime;
         }
 
-        if (!_isAlive && CompareTag("Player"))
-        {
-            SceneManager.LoadScene("GameplayScene");
-        }
+
     }
     
     public bool IsHit {
