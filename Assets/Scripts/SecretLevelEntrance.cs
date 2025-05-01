@@ -6,6 +6,8 @@ public class SecretLevelEntrance : MonoBehaviour
 {
     [SerializeField]
     private GameObject _targetObject;
+    
+  
     private void OnTriggerEnter2D(Collider2D other)
     {
         Damageable collidingDamageable = other.GetComponentInParent<Damageable>();

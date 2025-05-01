@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Checkpoint
   - SecretLevel1Teleport
+  - WarpEnterClosed
+  - WarpEnterOpen
   layers:
   - Default
   - TransparentFX
