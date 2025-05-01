@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SecretLevelExit : MonoBehaviour
 {
+    GameObject player = GameObject.Find("Player");
 
     void OnEnable()
     {
@@ -37,8 +38,8 @@ public class SecretLevelExit : MonoBehaviour
         {
             CheckpointController checkpointController = FindObjectOfType<CheckpointController>();
             SceneManager.LoadScene("GameplayScene");
-            Debug.Log("Secret Level Exit " + other.transform.position);
-            other.transform.position = checkpointController._startingPosition;
+            Debug.Log("Secret Level Exit " + player.transform.position);
+            player.transform.position = checkpointController._startingPosition;
             
         }
     }
