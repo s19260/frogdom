@@ -36,9 +36,9 @@ public class NPC : MonoBehaviour
     public void zeroText()
     {
         dialogueText.text = "";
-        index = 0;
-        if(dialogueText.text != null)
+        index = 0; 
         dialogueBox.SetActive(false);
+        
     }
     void Start()
     {
