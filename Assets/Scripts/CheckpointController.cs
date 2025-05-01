@@ -22,9 +22,9 @@ public class CheckpointController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Checkpoint"))
+        if (collision.gameObject.CompareTag("Checkpoint") || collision.gameObject.CompareTag("SecretLevel1Teleport"))
         {
-            Debug.Log("checkpoint");
+            Debug.Log("checkpoint " + _startingPosition);
             _startingPosition = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
         }
     }
