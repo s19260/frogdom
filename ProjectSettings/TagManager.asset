@@ -8,6 +8,7 @@ TagManager:
   - SecretLevel1Teleport
   - WarpEnterClosed
   - WarpEnterOpen
+  - WarpParticle
   layers:
   - Default
   - TransparentFX
