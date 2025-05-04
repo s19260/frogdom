@@ -49,7 +49,7 @@ public class PlatformFading : MonoBehaviour
             var color = spriteRenderer.color;
             spriteRenderer.color = new Color(color.r, color.g, color.b, color.a - 0.01f);
 
-            yield return new WaitForSeconds(Time.unscaledDeltaTime * 3);
+            yield return new WaitForSeconds(Time.unscaledDeltaTime * 5);
         }
 
         collider2d.enabled = false;

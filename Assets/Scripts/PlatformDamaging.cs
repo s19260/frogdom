@@ -20,7 +20,6 @@ public class PlatformDamaging : MonoBehaviour
             Debug.Log("collision enter with player");
 
             Damageable damageable = collision.gameObject.GetComponentInParent<Damageable>();
-            Debug.Log(damageable._health);
 
             damageable.ModifyHealth(-1);
             if (damageable._health <= 0)
@@ -34,11 +33,7 @@ public class PlatformDamaging : MonoBehaviour
                 damageable.heartsContainer[1].SetActive(true);
                 damageable.heartsContainer[2].SetActive(true);
             }
-            // if (!hasPlayerTouched)
-            // {
-            //     StartCoroutine(FadeOut());
-            //     hasPlayerTouched = true;
-            // }
+
         }
     }
 }
