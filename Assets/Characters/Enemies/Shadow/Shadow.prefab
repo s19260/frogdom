@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc39cb151c1b432f9e9df5d7f9c08e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockback: {x: 0, y: 0}
   attackDamage: 10
 --- !u!1 &3512204217895064154
 GameObject:
@@ -204,11 +205,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 108245173ee9646ac8cd844fcb6fa331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageableHit:
+    m_PersistentCalls:
+      m_Calls: []
   _isAlive: 1
   isInvincible: 0
   invincibleTime: 0.25
   _maxHealth: 100
   _health: 100
+  _keys: 0
+  heartsContainer:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  keysContainer:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8833928722074651852
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,8 +481,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 108245173ee9646ac8cd844fcb6fa331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageableHit:
+    m_PersistentCalls:
+      m_Calls: []
   _isAlive: 1
   isInvincible: 0
   invincibleTime: 0.25
-  _maxHealth: 100
-  _health: 100
+  _maxHealth: 150
+  _health: 150
+  _keys: 0
+  heartsContainer:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  keysContainer:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
