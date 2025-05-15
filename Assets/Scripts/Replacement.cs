@@ -8,8 +8,8 @@ public class Replacement : MonoBehaviour
         GameObject warpEnterClosed = GameObject.FindWithTag("WarpEnterClosed");
         GameObject warpEnterOpen = GameObject.FindWithTag("WarpEnterOpen");
 
-        Damageable collidingDamageable = other.GetComponentInParent<Damageable>();
-        if (other.CompareTag("Player") && collidingDamageable._keys >= 3)
+        GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
+        if (other.CompareTag("Player") && collidingGameSetup._keys >= 3)
         {
             if (warpEnterClosed)
             {

@@ -18,4 +18,5 @@ internal class AnimationStrings
     internal static string canMove = "canMove";
     internal static string isHit = "isHit";
     internal static string isBounce = "isBounce";
+    internal static string attack2 = "attack2";
 }

@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
-
+    
+    
+    
     public float CurrentMoveSpeed
     {
         get
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    
     public bool CanMove
     {
         get
@@ -86,6 +89,7 @@ public class PlayerController : MonoBehaviour
     
     private void Awake()
     {
+        
         Cursor.visible = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -127,8 +131,11 @@ public class PlayerController : MonoBehaviour
         else if (context.canceled) IsRunning = false;
     }
 
+    
+    
     public void OnJump(InputAction.CallbackContext context)
     {
+        
         if (context.started && touchingDirections.IsGrounded)
         {
             animator.SetTrigger(AnimationStrings.jump);
@@ -138,6 +145,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
+        GameObject attackPowerUp = GameObject.FindWithTag("AttackPowerUp");
+        if (attackPowerUp)
+            animator.SetBool(AnimationStrings.attack2, true);
+        {
+            if (context.started) animator.SetTrigger(AnimationStrings.attack2);
+        }
         if (context.started) animator.SetTrigger(AnimationStrings.attack);
     }
 

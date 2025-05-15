@@ -10,8 +10,8 @@ public class SecretLevelEntrance : MonoBehaviour
   
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Damageable collidingDamageable = other.GetComponentInParent<Damageable>();
-        if (other.CompareTag("Player") && collidingDamageable._keys >= 3)
+        GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
+        if (other.CompareTag("Player") && collidingGameSetup._keys >= 3)
         {
             if(_targetObject)
                 other.transform.position = _targetObject.transform.position;

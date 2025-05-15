@@ -11,21 +11,21 @@ public class KeyPickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             
-            Damageable collidingDamageable = other.GetComponentInParent<Damageable>();
+            GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
             
-            collidingDamageable.AddKey();
-            if (collidingDamageable._keys <= 1)
+            collidingGameSetup.AddKey();
+            if (collidingGameSetup._keys <= 1)
             {
                 Debug.Log("Key pickup 1");
-                collidingDamageable.keysContainer[0].SetActive(true);
+                collidingGameSetup.keysContainer[0].SetActive(true);
             }
-            else if(collidingDamageable._keys == 2){
+            else if(collidingGameSetup._keys == 2){
                 Debug.Log("Key pickup 2");
-                collidingDamageable.keysContainer[1].SetActive(true); 
-            } else if (collidingDamageable._keys == 3)
+                collidingGameSetup.keysContainer[1].SetActive(true); 
+            } else if (collidingGameSetup._keys == 3)
             {
                 Debug.Log("Key pickup 3");
-                collidingDamageable.keysContainer[2].SetActive(true); 
+                collidingGameSetup.keysContainer[2].SetActive(true); 
 
             }
                 Destroy(this.gameObject);

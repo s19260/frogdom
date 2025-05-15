@@ -11,13 +11,13 @@ public class HealthPickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Health Pickup");
-            Damageable collidingDamageable = other.GetComponentInParent<Damageable>();
+            GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
            
             
-                if (collidingDamageable && collidingDamageable.ModifyHealth(healthBonus))
+                if (collidingGameSetup && collidingGameSetup.ModifyHealth(healthBonus))
                 {
-                    Debug.Log(collidingDamageable.heartsContainer[collidingDamageable._health-1]);
-                    collidingDamageable.heartsContainer[collidingDamageable._health-1].SetActive(true);
+                    Debug.Log(collidingGameSetup.heartsContainer[collidingGameSetup._health-1]);
+                    collidingGameSetup.heartsContainer[collidingGameSetup._health-1].SetActive(true);
 
 
                     Destroy(this.gameObject);
