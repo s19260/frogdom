@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
 
+    
     public float CurrentMoveSpeed
     {
         get
@@ -127,8 +128,11 @@ public class PlayerController : MonoBehaviour
         else if (context.canceled) IsRunning = false;
     }
 
+    
+    
     public void OnJump(InputAction.CallbackContext context)
     {
+        
         if (context.started && touchingDirections.IsGrounded)
         {
             animator.SetTrigger(AnimationStrings.jump);

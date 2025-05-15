@@ -11,11 +11,11 @@ public class Attack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Damageable damageable = collision.GetComponent<Damageable>();
+        GameSetup gameSetup = collision.GetComponent<GameSetup>();
 
-        if (damageable != null)
+        if (gameSetup != null)
         {
-            bool gotHit = damageable.Hit(attackDamage, knockback);
+            bool gotHit = gameSetup.Hit(attackDamage, knockback);
             if (gotHit){
             Debug.Log(collision.name + " hit for " + attackDamage);
             }

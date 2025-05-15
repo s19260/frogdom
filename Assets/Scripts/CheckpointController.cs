@@ -37,15 +37,15 @@ public class CheckpointController : MonoBehaviour
     {
         if (CompareTag("Player"))
         {
-            Damageable damageable =  GetComponentInParent<Damageable>();
-            if (!damageable.IsAlive)
+            GameSetup gameSetup =  GetComponentInParent<GameSetup>();
+            if (!gameSetup.IsAlive)
             {
                 transform.position = _startingPosition;
-                damageable.IsAlive = true;
-                damageable.Health = 3;
-                damageable.heartsContainer[0].SetActive(true);
-                damageable.heartsContainer[1].SetActive(true);
-                damageable.heartsContainer[2].SetActive(true);
+                gameSetup.IsAlive = true;
+                gameSetup.Health = 3;
+                gameSetup.heartsContainer[0].SetActive(true);
+                gameSetup.heartsContainer[1].SetActive(true);
+                gameSetup.heartsContainer[2].SetActive(true);
             }
         }
     }
