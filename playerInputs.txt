@@ -9861,3 +9861,15 @@
 2025-05-15 09:38:20 - Key Pressed: A
 2025-05-15 09:38:21 - Key Pressed: Space
 2025-05-15 09:38:21 - Key Pressed: D
+2025-05-15 09:39:16 - Key Pressed: D
+2025-05-15 09:39:16 - Key Pressed: Mouse0
+2025-05-15 09:39:17 - Key Pressed: D
+2025-05-15 09:39:17 - Key Pressed: Mouse0
+2025-05-15 09:39:17 - Key Pressed: Mouse0
+2025-05-15 09:39:17 - Key Pressed: D
+2025-05-15 09:39:17 - Key Pressed: Mouse0
+2025-05-15 09:39:18 - Key Pressed: Mouse0
+2025-05-15 09:39:18 - Key Pressed: Mouse0
+2025-05-15 09:39:18 - Key Pressed: D
+2025-05-15 09:39:18 - Key Pressed: Mouse0
+2025-05-15 09:39:18 - Key Pressed: LeftShift
