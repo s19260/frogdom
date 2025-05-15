@@ -18,7 +18,7 @@ public class JumpPowerUpScript : MonoBehaviour
                 collidingGameSetup.jumpPowerUpContainer[0].SetActive(true);
                 hasJumpPowerUp = true;
                 Debug.Log(hasJumpPowerUp);
-                playerController.jumpInpulse = playerController.jumpInpulse * 2;
+                playerController.jumpInpulse = playerController.jumpInpulse * 1.3f;
             }
             Destroy(this.gameObject);
                 

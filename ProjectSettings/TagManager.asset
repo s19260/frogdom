@@ -9,6 +9,7 @@ TagManager:
   - WarpEnterClosed
   - WarpEnterOpen
   - WarpParticle
+  - AttackPowerUp
   layers:
   - Default
   - TransparentFX

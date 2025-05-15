@@ -1,0 +1,28 @@
+using UnityEngine;
+
+public class AttackPowerUpScript : MonoBehaviour
+{
+    
+    public bool hasAttackPowerUp = false;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
+            PlayerController playerController = other.GetComponent<PlayerController>();
+            
+            collidingGameSetup.AddAttackPowerUp();
+            if (collidingGameSetup._attackPowerUp <= 1)
+            {
+                Debug.Log("Attack Up ");
+                
+                collidingGameSetup.attackPowerUpContainer[0].SetActive(true);
+                
+            }
+            Destroy(this.gameObject);
+                
+        }
+        
+
+    }
+}

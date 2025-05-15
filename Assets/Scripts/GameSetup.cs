@@ -9,6 +9,7 @@ public class GameSetup : MonoBehaviour
     public UnityEvent<int, Vector2> damageableHit;
     [SerializeField]
     private bool _isAlive = true;
+    private bool _hasAttackPowerUp = false;
     [SerializeField]
     private bool isInvincible = false;
     private float timeSinceHit = 0;
@@ -20,12 +21,14 @@ public class GameSetup : MonoBehaviour
     public int _health = 3;
     [SerializeField]
     public int _keys = 0;
+    public int _jumpPowerUp = 0;
+    public int _attackPowerUp = 0;
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
     [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
     [SerializeField]
-    public int _jumpPowerUp = 0;
     public GameObject[] jumpPowerUpContainer = new GameObject[1];
+    public GameObject[] attackPowerUpContainer = new GameObject[1];
 
     
 
@@ -84,6 +87,11 @@ public class GameSetup : MonoBehaviour
     {
         _jumpPowerUp++;
     }
+
+    public void AddAttackPowerUp()
+    {
+        _attackPowerUp++;
+    }
     
 
     public bool IsAlive
@@ -110,6 +118,7 @@ public class GameSetup : MonoBehaviour
             keysContainer[1].SetActive(false);
             keysContainer[2].SetActive(false);
             jumpPowerUpContainer[0].SetActive(false);
+            attackPowerUpContainer[0].SetActive(false);
         }
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -143,7 +152,20 @@ public class GameSetup : MonoBehaviour
 
 
     }
-    
+
+    public bool hasAttackPowerUp
+    {
+        get
+        {
+            if (_attackPowerUp > 0);
+            return true;
+        }
+        set
+        {
+            _hasAttackPowerUp = value;
+            animator.SetBool(AnimationStrings.attack2, value);
+        }
+    }
     public bool IsHit {
         get
         {
