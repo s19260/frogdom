@@ -10,6 +10,7 @@ TagManager:
   - WarpEnterOpen
   - WarpParticle
   - AttackPowerUp
+  - Trash
   layers:
   - Default
   - TransparentFX

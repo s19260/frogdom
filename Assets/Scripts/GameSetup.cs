@@ -24,6 +24,7 @@ public class GameSetup : MonoBehaviour
     public int _jumpPowerUp = 0;
     public int _attackPowerUp = 0;
     public int _dashPowerUp = 0;
+    public int _trash = 0;
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
     [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
@@ -31,6 +32,7 @@ public class GameSetup : MonoBehaviour
     public GameObject[] jumpPowerUpContainer = new GameObject[1];
     public GameObject[] attackPowerUpContainer = new GameObject[1];
     public GameObject[] dashPowerUpContainer = new GameObject[1];
+    //public GameObject[] trashContainer = new GameObject[10];
 
     
 
@@ -98,6 +100,11 @@ public class GameSetup : MonoBehaviour
     public void AddDashPowerUp()
     {
         _dashPowerUp++;
+    }
+
+    public void AddTrash()
+    {
+        _trash++;
     }
     
 
