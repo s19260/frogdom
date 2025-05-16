@@ -481,6 +481,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 783e4c94-9388-4d5f-bb19-215917a7cf3a
     m_ActionName: 'Player/Jump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6334545025340397076}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e6dce5bd-c7ff-4500-ae85-d2c65d30f1c5
+    m_ActionName: 'Player/Dash[/Keyboard/leftShift]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -612,6 +628,7 @@ MonoBehaviour:
   _keys: 0
   _jumpPowerUp: 0
   _attackPowerUp: 0
+  _dashPowerUp: 0
   heartsContainer:
   - {fileID: 0}
   - {fileID: 0}
@@ -623,6 +640,8 @@ MonoBehaviour:
   jumpPowerUpContainer:
   - {fileID: 0}
   attackPowerUpContainer:
+  - {fileID: 0}
+  dashPowerUpContainer:
   - {fileID: 0}
 --- !u!114 &5938951351128711114
 MonoBehaviour:

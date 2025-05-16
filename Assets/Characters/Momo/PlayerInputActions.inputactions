@@ -45,7 +45,16 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "783e4c94-9388-4d5f-bb19-215917a7cf3a",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "e6dce5bd-c7ff-4500-ae85-d2c65d30f1c5",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -274,6 +283,17 @@
                 },
                 {
                     "name": "",
+                    "id": "15003c73-a31a-423a-8ae8-0dc678b3648e",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2ab12825-0e26-43b4-b3d1-86686c13d388",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -291,6 +311,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "112a3434-cae0-4ad9-bb56-e4bda2ead234",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

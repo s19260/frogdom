@@ -23,12 +23,14 @@ public class GameSetup : MonoBehaviour
     public int _keys = 0;
     public int _jumpPowerUp = 0;
     public int _attackPowerUp = 0;
+    public int _dashPowerUp = 0;
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
     [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
     [SerializeField]
     public GameObject[] jumpPowerUpContainer = new GameObject[1];
     public GameObject[] attackPowerUpContainer = new GameObject[1];
+    public GameObject[] dashPowerUpContainer = new GameObject[1];
 
     
 
@@ -92,6 +94,11 @@ public class GameSetup : MonoBehaviour
     {
         _attackPowerUp++;
     }
+
+    public void AddDashPowerUp()
+    {
+        _dashPowerUp++;
+    }
     
 
     public bool IsAlive
@@ -119,6 +126,7 @@ public class GameSetup : MonoBehaviour
             keysContainer[2].SetActive(false);
             jumpPowerUpContainer[0].SetActive(false);
             attackPowerUpContainer[0].SetActive(false);
+            dashPowerUpContainer[0].SetActive(false);
         }
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -153,7 +161,7 @@ public class GameSetup : MonoBehaviour
 
     }
 
-    public bool hasAttackPowerUp
+    public bool HasAttackPowerUp
     {
         get
         {

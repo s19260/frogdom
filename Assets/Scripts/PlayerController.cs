@@ -135,11 +135,20 @@ public class PlayerController : MonoBehaviour
     
     public void OnJump(InputAction.CallbackContext context)
     {
-        
         if (context.started && touchingDirections.IsGrounded)
         {
             animator.SetTrigger(AnimationStrings.jump);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInpulse);
+        }
+    }
+    
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            Debug.Log("Dash");
+            animator.SetTrigger(AnimationStrings.dash);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x *2, rb.linearVelocity.y);
         }
     }
 
