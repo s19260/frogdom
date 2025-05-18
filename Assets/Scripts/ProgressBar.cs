@@ -16,7 +16,7 @@ public class ProgressBar : MonoBehaviour
 
     void Start()
     {
-        OnSliderValueChanged(slider.value);
+        
     }
 
     void Update()

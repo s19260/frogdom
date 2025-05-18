@@ -12,7 +12,7 @@ public class AttackPowerUpScript : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             
             collidingGameSetup.AddAttackPowerUp();
-            if (collidingGameSetup._attackPowerUp <= 1)
+            if (collidingGameSetup._attackPowerUp)
             {
                 Debug.Log("Attack Up ");
                 

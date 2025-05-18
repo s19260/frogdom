@@ -12,7 +12,7 @@ public class JumpPowerUpScript : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             
             collidingGameSetup.AddJumpPowerUp();
-            if (collidingGameSetup._jumpPowerUp <= 1)
+            if (collidingGameSetup._jumpPowerUp)
             {
                 Debug.Log("Jump Power Up  1");
                 collidingGameSetup.jumpPowerUpContainer[0].SetActive(true);

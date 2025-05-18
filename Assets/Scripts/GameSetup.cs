@@ -21,9 +21,9 @@ public class GameSetup : MonoBehaviour
     public int _health = 3;
     [SerializeField]
     public int _keys = 0;
-    public int _jumpPowerUp = 0;
-    public int _attackPowerUp = 0;
-    public int _dashPowerUp = 0;
+    public bool _jumpPowerUp = false;
+    public bool _attackPowerUp = false;
+    public bool _dashPowerUp = false;
     public int _trash = 0;
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
@@ -89,17 +89,17 @@ public class GameSetup : MonoBehaviour
 
     public void AddJumpPowerUp()
     {
-        _jumpPowerUp++;
+        _jumpPowerUp = true;
     }
 
     public void AddAttackPowerUp()
     {
-        _attackPowerUp++;
+        _attackPowerUp = true;
     }
 
     public void AddDashPowerUp()
     {
-        _dashPowerUp++;
+        _dashPowerUp = true;
     }
 
     public void AddTrash()
@@ -172,8 +172,11 @@ public class GameSetup : MonoBehaviour
     {
         get
         {
-            if (_attackPowerUp > 0);
-            return true;
+            if (_attackPowerUp)
+            {
+                return true;
+            }
+            return false;
         }
         set
         {

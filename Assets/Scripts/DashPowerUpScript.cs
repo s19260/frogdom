@@ -10,7 +10,7 @@ public class DashPowerUpScript : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             
             collidingGameSetup.AddDashPowerUp();
-            if (collidingGameSetup._dashPowerUp <= 1)
+            if (collidingGameSetup._dashPowerUp)
             {
                 Debug.Log("Dash Up ");
                 
