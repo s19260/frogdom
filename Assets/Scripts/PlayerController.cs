@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 40f;
     public float runSpeed = 8f;
+    public float dashSpeed = 100f;
     public float jumpInpulse = 60f;
 
 
@@ -15,6 +16,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] 
     private bool _isRunning;
 
+    [SerializeField]
+    private bool _isDashing;
+
     public bool _isFacingRight = true;
     private Animator animator;
     private Vector2 moveInput;
@@ -23,6 +27,7 @@ public class PlayerController : MonoBehaviour
     
     
     
+    // Direction on movement is determined by input value
     public float CurrentMoveSpeed
     {
         get
@@ -38,6 +43,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // As Dash can be executed even on idle state direction is determined by sprite facing direction
+    public float CurrentDashSpeed
+    {
+        get
+        {
+            if (IsDashing)
+            {
+                // Important! We assume we only dash in X right now
+                if (IsFacingRight)
+                    return dashSpeed;
+                else
+                    return -dashSpeed;
+            }
+
+            return 0;
+        }
+    }
 
     public bool IsMoving
     {
@@ -76,6 +98,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public bool IsDashing
+    {
+        get => _isDashing;
+        private set
+        {
+            _isDashing = value;
+            animator.SetBool(AnimationStrings.isDashing, value);
+        }
+    }
+
     public bool IsFacingRight
     {
         get => _isFacingRight;
@@ -85,21 +117,19 @@ public class PlayerController : MonoBehaviour
             _isFacingRight = value;
         }
     }
-
     
     private void Awake()
     {
-        
         Cursor.visible = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
     }
 
-
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed + CurrentDashSpeed, rb.linearVelocity.y);
+        Debug.Log(rb.linearVelocity);
         animator.SetFloat(AnimationStrings.yVelocity, rb.linearVelocity.y);
     }
 
@@ -130,8 +160,6 @@ public class PlayerController : MonoBehaviour
             IsRunning = true;
         else if (context.canceled) IsRunning = false;
     }
-
-    
     
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -147,8 +175,14 @@ public class PlayerController : MonoBehaviour
         if (context.started)
         {
             Debug.Log("Dash");
-            animator.SetTrigger(AnimationStrings.dash);
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x *2, rb.linearVelocity.y);
+            IsDashing = true;
+
+            //animator.SetTrigger(AnimationStrings.dash);
+            rb.linearVelocity = new Vector2(2000f, rb.linearVelocity.y);
+        }
+        else if (context.canceled)
+        {
+            IsDashing = false;
         }
     }
 

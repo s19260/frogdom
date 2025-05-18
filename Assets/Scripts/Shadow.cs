@@ -100,14 +100,14 @@ public class Shadow : MonoBehaviour
         {
             case WalkableDirection.Left:
                 WalkDirection = WalkableDirection.Right;
-                Debug.Log(" skret w prawo");
+                //Debug.Log(" skret w prawo");
                 break;
             case WalkableDirection.Right:
                 WalkDirection = WalkableDirection.Left;
-                Debug.Log(" skret w lewo");
+                //Debug.Log(" skret w lewo");
                 break;
             default:
-                Debug.Log(name + "'s WalkDirection is not set to Left or Right");
+                //Debug.Log(name + "'s WalkDirection is not set to Left or Right");
                 break;
         }
     }
