@@ -172,11 +172,7 @@ public class GameSetup : MonoBehaviour
     {
         get
         {
-            if (_attackPowerUp)
-            {
-                return true;
-            }
-            return false;
+            return _attackPowerUp;
         }
         set
         {

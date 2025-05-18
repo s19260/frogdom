@@ -154,12 +154,18 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        GameObject attackPowerUp = GameObject.FindWithTag("AttackPowerUp");
-        if (attackPowerUp)
-            animator.SetBool(AnimationStrings.attack2, true);
+        GameSetup gameSetup = gameObject.GetComponent<GameSetup>();
+        if (!gameSetup)
         {
-            if (context.started) animator.SetTrigger(AnimationStrings.attack2);
+            Debug.LogError("GameSetup nie zostal wykryty.");
+            return;
         }
+
+        if (gameSetup._attackPowerUp)
+        {
+            animator.SetBool(AnimationStrings.attack2, true);
+        }
+        
         if (context.started) animator.SetTrigger(AnimationStrings.attack);
     }
 
