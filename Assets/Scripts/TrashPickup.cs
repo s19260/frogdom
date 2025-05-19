@@ -10,11 +10,10 @@ public class TrashPickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Trash Pickup");
-            GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
-           
-            collidingGameSetup.AddTrash();
+            FindObjectOfType<ProgressBar>().Collect();
+            Destroy(gameObject);
             
         }
-        Destroy(this.gameObject);
+
     }
 }

@@ -4,31 +4,21 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     
-    private Slider slider;
-
-    public float fillSpeed = 0.5f;
-
-    private float targetProgress = 0;
-    private void Awake()
-    {
-        slider = GetComponent<Slider>();
-    }
+    public Slider progressBar;          
+    public int totalCollectibles = 10;  
+    private int collected = 0;          
 
     void Start()
     {
-        
+        progressBar.interactable = false; 
+        progressBar.minValue = 0;
+        progressBar.maxValue = totalCollectibles;
+        progressBar.value = 0;
     }
 
-    void Update()
+    public void Collect()
     {
-        
-        if (slider.value < targetProgress)
-        {
-            slider.value += fillSpeed * Time.deltaTime;
-        }
-    }
-    public void OnSliderValueChanged(float progress)
-    {
-        targetProgress = slider.value + progress;
+        collected++;
+        progressBar.value = collected;
     }
 }
