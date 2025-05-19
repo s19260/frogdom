@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,7 +26,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
     
-    
+    public float dashCooldown = 1f;  // Adjust in Inspector
+    private bool canDash = true;
     
     // Direction on movement is determined by input value
     public float CurrentMoveSpeed
@@ -172,18 +174,32 @@ public class PlayerController : MonoBehaviour
     
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (context.started)
+        GameSetup gameSetup = gameObject.GetComponent<GameSetup>();
+
+        if (context.started && canDash && gameSetup._dashPowerUp)
         {
             Debug.Log("Dash");
-            IsDashing = true;
-
-            //animator.SetTrigger(AnimationStrings.dash);
-            rb.linearVelocity = new Vector2(2000f, rb.linearVelocity.y);
+            StartCoroutine(PerformDash());
         }
         else if (context.canceled)
         {
             IsDashing = false;
         }
+    }
+
+    private IEnumerator PerformDash()
+    {
+        canDash = false;
+        IsDashing = true;
+    
+        rb.linearVelocity = new Vector2(2000f, rb.linearVelocity.y);
+    
+       animator.SetTrigger(AnimationStrings.dash);
+
+        yield return new WaitForSeconds(dashCooldown);
+    
+        IsDashing = false;
+        canDash = true;
     }
 
     public void OnAttack(InputAction.CallbackContext context)
