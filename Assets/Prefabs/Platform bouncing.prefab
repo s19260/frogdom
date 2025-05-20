@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 177817821641245458}
   - component: {fileID: 7231982235554971474}
   - component: {fileID: 2949860466935987102}
+  - component: {fileID: 8488083253310720607}
   m_Layer: 6
   m_Name: Platform bouncing
   m_TagString: Untagged
@@ -78,12 +79,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6ad6599e1756a446287e707a30278d03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be36222249483c546b5b54ea1a71fab8, type: 3}
   m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 147.5, y: 102.5}
+  m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -128,7 +129,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4, y: 4}
-    newSize: {x: 147.5, y: 102.5}
+    newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -147,3 +148,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b58b6fd5a4ffe48a1b0d203e84ce2036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8488083253310720607
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252287596996875823}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5fef2165a4b13497d95ba2b14dd90683, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
