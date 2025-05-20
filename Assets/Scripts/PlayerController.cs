@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class PlayerController : MonoBehaviour
@@ -28,8 +29,18 @@ public class PlayerController : MonoBehaviour
     
     public float dashCooldown = 1f;  // Adjust in Inspector
     private bool canDash = true;
+    public Slider dashCooldownSlider;
     
     // Direction on movement is determined by input value
+    
+    void Start()
+    {
+        if (dashCooldownSlider != null)
+        {
+            dashCooldownSlider.value = dashCooldownSlider.maxValue;
+        }
+    }
+    
     public float CurrentMoveSpeed
     {
         get
@@ -192,11 +203,30 @@ public class PlayerController : MonoBehaviour
         canDash = false;
         IsDashing = true;
     
-        rb.linearVelocity = new Vector2(2000f, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(20f, rb.linearVelocity.y);
     
-       animator.SetTrigger(AnimationStrings.dash);
+        animator.SetTrigger(AnimationStrings.dash);
 
-        yield return new WaitForSeconds(dashCooldown);
+        if (dashCooldownSlider != null)
+        {
+            dashCooldownSlider.value = 0f;
+        }
+        
+        float elapsed = 0f;
+        while (elapsed < dashCooldown)
+        {
+            elapsed += Time.deltaTime;
+            if (dashCooldownSlider != null)
+            {
+                dashCooldownSlider.value = Mathf.Clamp01(elapsed / dashCooldown) * dashCooldownSlider.maxValue;
+            }
+            yield return null;
+        }
+
+        if (dashCooldownSlider != null)
+        {
+            dashCooldownSlider.value = dashCooldownSlider.maxValue;
+        }
     
         IsDashing = false;
         canDash = true;
