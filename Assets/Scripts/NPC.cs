@@ -18,7 +18,7 @@ public class NPC : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+        if (Input.GetKeyDown(KeyCode.T) && playerIsClose)
         {
             if (dialogueBox.activeInHierarchy)
             {
@@ -26,6 +26,8 @@ public class NPC : MonoBehaviour
             }
             else
             {
+                GameObject text = GameObject.FindGameObjectWithTag("Text");
+                text.SetActive(false);
                 dialogueBox.SetActive(true);
                 StartCoroutine(Typing());
             }
@@ -71,7 +73,7 @@ public class NPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("player is close");
+//            Debug.Log("player is close");
             playerIsClose = true;
         }
     }

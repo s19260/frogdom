@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed + CurrentDashSpeed, rb.linearVelocity.y);
-        Debug.Log(rb.linearVelocity);
+       // Debug.Log(rb.linearVelocity);
         animator.SetFloat(AnimationStrings.yVelocity, rb.linearVelocity.y);
     }
 
