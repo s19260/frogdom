@@ -182,18 +182,20 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInpulse);
         }
     }
-    
+    private bool dashButtonHeld = false;
+
     public void OnDash(InputAction.CallbackContext context)
     {
         GameSetup gameSetup = gameObject.GetComponent<GameSetup>();
 
-        if (context.started && canDash && gameSetup._dashPowerUp)
+        if (context.performed && canDash && gameSetup._dashPowerUp && !dashButtonHeld)
         {
-            Debug.Log("Dash");
+            dashButtonHeld = true;
             StartCoroutine(PerformDash());
         }
         else if (context.canceled)
         {
+            dashButtonHeld = false;
             IsDashing = false;
         }
     }
