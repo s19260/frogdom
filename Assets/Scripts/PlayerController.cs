@@ -191,6 +191,7 @@ public class PlayerController : MonoBehaviour
         if (context.performed && canDash && gameSetup._dashPowerUp && !dashButtonHeld)
         {
             dashButtonHeld = true;
+            animator.SetTrigger("dashAnimation"); // Trigger dash animation
             StartCoroutine(PerformDash());
         }
         else if (context.canceled)
@@ -199,6 +200,7 @@ public class PlayerController : MonoBehaviour
             IsDashing = false;
         }
     }
+
 
     private IEnumerator PerformDash()
     {
