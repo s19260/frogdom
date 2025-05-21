@@ -344,10 +344,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 8
+  dashSpeed: 100
   jumpInpulse: 10
   _isMoving: 0
   _isRunning: 0
+  _isDashing: 0
   _isFacingRight: 1
+  dashCooldown: 1
+  dashCooldownSlider: {fileID: 0}
 --- !u!114 &9133154130999783753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,7 +538,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1f6a9da2a02594db1a15f44a36c113e5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -629,6 +633,7 @@ MonoBehaviour:
   _jumpPowerUp: 0
   _attackPowerUp: 0
   _dashPowerUp: 0
+  _trash: 0
   heartsContainer:
   - {fileID: 0}
   - {fileID: 0}

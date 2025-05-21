@@ -214,6 +214,10 @@ MonoBehaviour:
   _maxHealth: 100
   _health: 100
   _keys: 0
+  _jumpPowerUp: 0
+  _attackPowerUp: 0
+  _dashPowerUp: 0
+  _trash: 0
   heartsContainer:
   - {fileID: 0}
   - {fileID: 0}
@@ -221,6 +225,12 @@ MonoBehaviour:
   keysContainer:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  jumpPowerUpContainer:
+  - {fileID: 0}
+  attackPowerUpContainer:
+  - {fileID: 0}
+  dashPowerUpContainer:
   - {fileID: 0}
 --- !u!1 &8833928722074651852
 GameObject:
@@ -355,7 +365,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1f6a9da2a02594db1a15f44a36c113e5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -490,6 +500,10 @@ MonoBehaviour:
   _maxHealth: 150
   _health: 150
   _keys: 0
+  _jumpPowerUp: 0
+  _attackPowerUp: 0
+  _dashPowerUp: 0
+  _trash: 0
   heartsContainer:
   - {fileID: 0}
   - {fileID: 0}
@@ -497,4 +511,10 @@ MonoBehaviour:
   keysContainer:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  jumpPowerUpContainer:
+  - {fileID: 0}
+  attackPowerUpContainer:
+  - {fileID: 0}
+  dashPowerUpContainer:
   - {fileID: 0}
