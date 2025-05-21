@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class JumpPowerUpScript : MonoBehaviour
 {
-    
     public bool hasJumpPowerUp = false;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
             PlayerController playerController = other.GetComponent<PlayerController>();
-            
+
             collidingGameSetup.AddJumpPowerUp();
             if (collidingGameSetup._jumpPowerUp)
             {
@@ -19,11 +19,15 @@ public class JumpPowerUpScript : MonoBehaviour
                 hasJumpPowerUp = true;
                 Debug.Log(hasJumpPowerUp);
                 playerController.jumpInpulse = playerController.jumpInpulse * 1.3f;
+
+                // Show the UI and freeze the game
+                JumpPowerUpUIManager uiManager = FindObjectOfType<JumpPowerUpUIManager>();
+                if (uiManager != null)
+                {
+                    uiManager.Show("You got Jump Power Up!\nPress Space\n or Enter to continue.");
+                }
             }
             Destroy(this.gameObject);
-                
         }
-        
-
     }
 }
