@@ -8,7 +8,7 @@ public class EndOfLevelScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Level ended");
-         //   SceneManager.LoadScene("MainMenuScene");
+            SceneManager.LoadScene("MainMenuScene");
         }
     }
 

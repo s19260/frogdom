@@ -12,6 +12,7 @@ TagManager:
   - AttackPowerUp
   - Trash
   - Text
+  - EndOfLevel
   layers:
   - Default
   - TransparentFX

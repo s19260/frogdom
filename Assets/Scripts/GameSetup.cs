@@ -170,6 +170,8 @@ public class GameSetup : MonoBehaviour
         if (!_isAlive)
         {
              deathCounter++;
+             GetComponent<PlayerInputSender>().SendDeathCount(deathCounter);
+
         }
 
     }
