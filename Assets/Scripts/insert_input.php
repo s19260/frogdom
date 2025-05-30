@@ -1,27 +1,52 @@
 <?php
+header("Content-Type: application/json");
+
 $servername = "127.0.0.1";
 $username = "serf";
 $password = "serf123";
 $dbname = "frogdom_db";
 
-$input_type = isset($_POST['input_type']) ? $_POST['input_type'] : '';
-$input_value = isset($_POST['input_value']) ? $_POST['input_value'] : '';
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die(json_encode(["status" => "error", "message" => "Connection failed: " . $conn->connect_error]));
 }
 
-$stmt = $conn->prepare("INSERT INTO player_inputs (input_type, input_value) VALUES (?, ?)");
-$stmt->bind_param("ss", $input_type, $input_value);
+$response = ["status" => "error", "message" => "Invalid request"];
 
-if ($stmt->execute()) {
-    echo "Success";
-} else {
-    echo "Error: " . $stmt->error;
+try {
+    if (isset($_POST['completion_time']) && isset($_POST['scene_name'])) {
+        $completion_time = floatval($_POST['completion_time']);
+        $scene_name = $_POST['scene_name'];
+        $stmt = $conn->prepare("INSERT INTO player_times (scene_name, completion_time) VALUES (?, ?)");
+        $stmt->bind_param("sd", $scene_name, $completion_time);
+        $stmt->execute();
+        $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
+        $stmt->close();
+    }
+    elseif (isset($_POST['death_count'])) {
+        $death_count = intval($_POST['death_count']);
+        $scene_name = isset($_POST['scene_name']) ? $_POST['scene_name'] : null;
+        if ($death_count <= 0) throw new Exception("Invalid death count");
+        $stmt = $conn->prepare("INSERT INTO player_deaths (death_count, scene_name) VALUES (?, ?)");
+        $stmt->bind_param("is", $death_count, $scene_name);
+        $stmt->execute();
+        $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
+        $stmt->close();
+    }
+    elseif (isset($_POST['input_type']) && isset($_POST['input_value'])) {
+        $input_type = $conn->real_escape_string($_POST['input_type']);
+        $input_value = $conn->real_escape_string($_POST['input_value']);
+        $stmt = $conn->prepare("INSERT INTO player_inputs (input_type, input_value) VALUES (?, ?)");
+        $stmt->bind_param("ss", $input_type, $input_value);
+        $stmt->execute();
+        $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
+        $stmt->close();
+    }
+} catch (Exception $e) {
+    $response["message"] = $e->getMessage();
 }
 
-$stmt->close();
 $conn->close();
+echo json_encode($response);
 ?>

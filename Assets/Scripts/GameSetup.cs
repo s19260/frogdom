@@ -24,7 +24,9 @@ public class GameSetup : MonoBehaviour
     public bool _jumpPowerUp = false;
     public bool _attackPowerUp = false;
     public bool _dashPowerUp = false;
+    public int deathCounter = 0;
     public int _trash = 0;
+    
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
     [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
@@ -165,6 +167,12 @@ public class GameSetup : MonoBehaviour
             timeSinceHit += Time.deltaTime;
         }
 
+        if (!_isAlive)
+        {
+             deathCounter++;
+             GetComponent<PlayerInputSender>().SendDeathCount(deathCounter);
+
+        }
 
     }
 
