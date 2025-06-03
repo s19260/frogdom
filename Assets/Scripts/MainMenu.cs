@@ -1,17 +1,69 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Networking;
+using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
+    public InputField usernameInput;
+    public GameObject errorText;
+    private string apiURL = "http://127.0.0.1:8000/insert_input.php";
+
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameplayScene");
-        Cursor.visible = false;
+        StartCoroutine(SendUsername());
+    }
+
+    IEnumerator SendUsername()
+    {
+        if (string.IsNullOrWhiteSpace(usernameInput.text))
+        {
+            errorText.SetActive(true);
+            errorText.GetComponent<Text>().text = "Enter a username!";
+            yield break;
+        }
+
+        WWWForm form = new WWWForm();
+        form.AddField("username", usernameInput.text);
+
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(apiURL, form))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.Success)
+            {
+                // Parse JSON response
+                var response = JsonUtility.FromJson<ApiResponse>(webRequest.downloadHandler.text);
+                
+                if (response.status == "success")
+                {
+                    SceneManager.LoadScene("GameplayScene");
+                    Cursor.visible = false;
+                }
+                else
+                {
+                    errorText.SetActive(true);
+                    errorText.GetComponent<Text>().text = response.message;
+                }
+            }
+            else
+            {
+                errorText.SetActive(true);
+                errorText.GetComponent<Text>().text = "Connection failed: " + webRequest.error;
+            }
+        }
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
-    
+
+    [System.Serializable]
+    private class ApiResponse
+    {
+        public string status;
+        public string message;
+    }
 }

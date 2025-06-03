@@ -6,7 +6,7 @@ using System.Collections;
 public class PlayerInputSender : MonoBehaviour
 {
     [Tooltip("URL to your PHP script handling all tables")]
-    public string phpUrl = "http://127.0.0.1:8000/insert_data.php";
+    public string phpUrl = "http://127.0.0.1:8000/insert_input.php";
 
     private float levelStartTime;
 
