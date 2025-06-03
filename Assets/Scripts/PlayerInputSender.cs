@@ -9,12 +9,14 @@ public class PlayerInputSender : MonoBehaviour
     public string phpUrl = "http://127.0.0.1:8000/insert_input.php";
 
     private float levelStartTime;
+    private int currentUserID; // Add this variable
 
     void Start()
     {
         levelStartTime = Time.time;
+        currentUserID = PlayerPrefs.GetInt("UserID", -1); // Retrieve stored user ID
     }
-
+    
     // Call this when the player completes the level
     public void OnLevelComplete()
     {
@@ -25,18 +27,17 @@ public class PlayerInputSender : MonoBehaviour
 
     private IEnumerator SendCompletionTime(string sceneName, float completionTime)
     {
+        if (currentUserID == -1) yield break; // Guard clause
+
         WWWForm form = new WWWForm();
+        form.AddField("user_id", currentUserID); // Add this line
         form.AddField("scene_name", sceneName);
         form.AddField("completion_time", completionTime.ToString("F2"));
 
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-
-            if (www.result == UnityWebRequest.Result.Success)
-                Debug.Log("Completion time sent! Response: " + www.downloadHandler.text);
-            else
-                Debug.LogError("Error sending completion time: " + www.error);
+            Debug.Log("Response: " + www.downloadHandler.text); // Always log response
         }
     }
     // For general inputs
@@ -65,35 +66,33 @@ public class PlayerInputSender : MonoBehaviour
 
     private IEnumerator SendInputCoroutine(string inputType, string inputValue)
     {
+        if (currentUserID == -1) yield break;
+
         WWWForm form = new WWWForm();
+        form.AddField("user_id", currentUserID); // Add this line
         form.AddField("input_type", inputType);
         form.AddField("input_value", inputValue);
 
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-
-            if (www.result == UnityWebRequest.Result.Success)
-                Debug.Log("Input sent! Response: " + www.downloadHandler.text);
-            else
-                Debug.LogError("Error sending input: " + www.error);
+            Debug.Log("Input response: " + www.downloadHandler.text);
         }
     }
 
     private IEnumerator SendDeathCountCoroutine(int deathCount, string sceneName)
     {
+        if (currentUserID == -1) yield break;
+
         WWWForm form = new WWWForm();
+        form.AddField("user_id", currentUserID); // Add this line
         form.AddField("death_count", deathCount.ToString());
         form.AddField("scene_name", sceneName);
 
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-
-            if (www.result == UnityWebRequest.Result.Success)
-                Debug.Log("Death count sent! Response: " + www.downloadHandler.text);
-            else
-                Debug.LogError("Error sending death count: " + www.error);
+            Debug.Log("Death response: " + www.downloadHandler.text);
         }
     }
 }

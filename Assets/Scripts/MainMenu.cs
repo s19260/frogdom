@@ -34,10 +34,14 @@ public class MainMenu : MonoBehaviour
             if (webRequest.result == UnityWebRequest.Result.Success)
             {
                 // Parse JSON response
-                var response = JsonUtility.FromJson<ApiResponse>(webRequest.downloadHandler.text);
+                var response = JsonUtility.FromJson<UserResponse>(webRequest.downloadHandler.text);
                 
                 if (response.status == "success")
                 {
+                    // Store the received user ID
+                    PlayerPrefs.SetInt("UserID", response.user_id);
+                    Debug.Log("Stored UserID: " + response.user_id);
+                    
                     SceneManager.LoadScene("GameplayScene");
                     Cursor.visible = false;
                 }
@@ -61,9 +65,10 @@ public class MainMenu : MonoBehaviour
     }
 
     [System.Serializable]
-    private class ApiResponse
+    private class UserResponse
     {
         public string status;
         public string message;
+        public int user_id;  // This must match the PHP response field name
     }
 }
