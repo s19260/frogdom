@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
+
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class Shadow : MonoBehaviour
 {
-
     public enum WalkableDirection
     {
         Right,
@@ -12,34 +13,28 @@ public class Shadow : MonoBehaviour
 
     public float walkSpeed = 5f;
     public DetectionZone attackZone;
-    Animator animator;
-
     [SerializeField] public WalkableDirection _walkDirection;
-
     public Vector2 walkDirectionVector = Vector2.right;
-
 
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
     private Vector2 walkDirectionAsVector2;
+    Animator animator;
 
     public WalkableDirection WalkDirection
     {
         get => _walkDirection;
         set
         {
-            // Make changes only if new
             _walkDirection = value;
 
             if (value == WalkableDirection.Left)
             {
-                // Facing left so negative scale
                 transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
                 walkDirectionAsVector2 = Vector2.left;
             }
             else if (value == WalkableDirection.Right)
             {
-                // Facing right so positive scale
                 transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
                 walkDirectionAsVector2 = Vector2.right;
             }
@@ -49,36 +44,45 @@ public class Shadow : MonoBehaviour
     }
 
     public bool _hasTarget;
-
     public bool HasTarget
     {
         get => _hasTarget;
         private set
         {
             _hasTarget = value;
-           animator.SetBool(AnimationStrings.hasTarget, value);
+            animator.SetBool(AnimationStrings.hasTarget, value);
         }
     }
+
+    // === HEALTH BAR ===
+    [Header("Health Settings")]
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth;
+
+    [Header("Health Bar UI")]
+    [SerializeField] private GameObject healthBarParent;
+    [SerializeField] private Image healthBarFill;
+    [SerializeField] private float healthBarYOffset = 1.5f;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     private void Start()
     {
+        UpdateHealthBar();
+        if (healthBarParent != null)
+            healthBarParent.SetActive(false);
     }
-
-    private float attackDelay = 2f;
-    private float timeSinceHit = 0;
 
     private void Update()
     {
-        
         HasTarget = attackZone.detectedColliders.Count > 0;
-        
+        UpdateHealthBarPosition();
     }
 
     private void FixedUpdate()
@@ -93,22 +97,67 @@ public class Shadow : MonoBehaviour
         rb.linearVelocity = new Vector2(tempWalkSpeed, rb.linearVelocity.y);
     }
 
-
     private void FlipDirection()
     {
         switch (WalkDirection)
         {
             case WalkableDirection.Left:
                 WalkDirection = WalkableDirection.Right;
-                //Debug.Log(" skret w prawo");
                 break;
             case WalkableDirection.Right:
                 WalkDirection = WalkableDirection.Left;
-                //Debug.Log(" skret w lewo");
                 break;
             default:
-                //Debug.Log(name + "'s WalkDirection is not set to Left or Right");
                 break;
         }
+        if (healthBarParent != null)
+        {
+            var scale = healthBarParent.transform.localScale;
+            scale.x = Mathf.Abs(scale.x);
+            healthBarParent.transform.localScale = scale;
+            healthBarParent.transform.rotation = Quaternion.identity;
+        }
+    }
+
+    // === HEALTH BAR LOGIC ===
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth = Mathf.Max(currentHealth - damage, 0);
+        UpdateHealthBar();
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void UpdateHealthBar()
+    {
+        if (healthBarFill != null)
+        {
+            healthBarFill.fillAmount = (float)currentHealth / maxHealth;
+        }
+        if (healthBarParent != null)
+        {
+            healthBarParent.SetActive(currentHealth < maxHealth && currentHealth > 0);
+        }
+    }
+
+    private void UpdateHealthBarPosition()
+    {
+        if (healthBarParent != null)
+        {
+            healthBarParent.transform.position = transform.position + Vector3.up * healthBarYOffset;
+        }
+    }
+
+    private void Die()
+    {
+        // Add death animation or effects here if needed
+        if (healthBarParent != null)
+            healthBarParent.SetActive(false);
+
+        Destroy(gameObject, 0.5f); // Delay for death animation
     }
 }

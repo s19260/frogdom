@@ -12,12 +12,14 @@ public class Attack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameSetup gameSetup = collision.GetComponent<GameSetup>();
+        Shadow shadow = collision.GetComponent<Shadow>();
 
         if (gameSetup != null)
         {
             bool gotHit = gameSetup.Hit(attackDamage, knockback);
             if (gotHit){
             Debug.Log(collision.name + " hit for " + attackDamage);
+            shadow.TakeDamage(attackDamage);
             }
         }
     }

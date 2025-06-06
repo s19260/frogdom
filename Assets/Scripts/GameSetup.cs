@@ -166,7 +166,7 @@ public class GameSetup : MonoBehaviour
             timeSinceHit += Time.deltaTime;
         }
 
-        if (!_isAlive)
+        if (!_isAlive && CompareTag("Player"))
         {
              deathCounter++;
              GetComponent<PlayerInputSender>().SendDeathCount(deathCounter);
@@ -197,6 +197,7 @@ public class GameSetup : MonoBehaviour
             animator.SetBool(AnimationStrings.isHit, value);
         } }
 
+    
     public bool Hit(int damage, Vector2 knockback)
     {
         if (IsAlive && !isInvincible)
