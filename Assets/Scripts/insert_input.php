@@ -16,7 +16,6 @@ if ($conn->connect_error) {
 $response = ["status" => "error", "message" => "Invalid request"];
 
 try {
-    // USERNAME REGISTRATION
     if (isset($_POST['username'])) {
         $username = $conn->real_escape_string($_POST['username']);
 
@@ -40,7 +39,6 @@ try {
         }
         $stmt->close();
     }
-    // LEVEL COMPLETION TIME
     elseif (isset($_POST['completion_time']) && isset($_POST['scene_name']) && isset($_POST['user_id'])) {
         $user_id = intval($_POST['user_id']);
         $completion_time = floatval($_POST['completion_time']);
@@ -53,7 +51,6 @@ try {
         $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
         $stmt->close();
     }
-    // DEATH COUNT
     elseif (isset($_POST['death_count']) && isset($_POST['user_id'])) {
         $user_id = intval($_POST['user_id']);
         $death_count = intval($_POST['death_count']);
@@ -68,7 +65,6 @@ try {
         $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
         $stmt->close();
     }
-    // INPUT EVENTS
     elseif (isset($_POST['input_type']) && isset($_POST['input_value']) && isset($_POST['user_id'])) {
         $user_id = intval($_POST['user_id']);
         $input_type = $conn->real_escape_string($_POST['input_type']);
@@ -87,7 +83,7 @@ try {
 
 } catch (Exception $e) {
     $response["message"] = $e->getMessage();
-    error_log("PHP Error: " . $e->getMessage()); // Log errors for debugging
+    error_log("PHP Error: " . $e->getMessage());
 }
 
 $conn->close();

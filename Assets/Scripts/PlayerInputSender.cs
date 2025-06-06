@@ -9,15 +9,14 @@ public class PlayerInputSender : MonoBehaviour
     public string phpUrl = "http://127.0.0.1:8000/insert_input.php";
 
     private float levelStartTime;
-    private int currentUserID; // Add this variable
+    private int currentUserID; 
 
     void Start()
     {
         levelStartTime = Time.time;
-        currentUserID = PlayerPrefs.GetInt("UserID", -1); // Retrieve stored user ID
+        currentUserID = PlayerPrefs.GetInt("UserID", -1); 
     }
     
-    // Call this when the player completes the level
     public void OnLevelComplete()
     {
         float completionTime = Time.time - levelStartTime;
@@ -27,17 +26,17 @@ public class PlayerInputSender : MonoBehaviour
 
     private IEnumerator SendCompletionTime(string sceneName, float completionTime)
     {
-        if (currentUserID == -1) yield break; // Guard clause
+        if (currentUserID == -1) yield break; 
 
         WWWForm form = new WWWForm();
-        form.AddField("user_id", currentUserID); // Add this line
+        form.AddField("user_id", currentUserID); 
         form.AddField("scene_name", sceneName);
         form.AddField("completion_time", completionTime.ToString("F2"));
 
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-            Debug.Log("Response: " + www.downloadHandler.text); // Always log response
+            Debug.Log("Response: " + www.downloadHandler.text); 
         }
     }
     // For general inputs
@@ -47,7 +46,6 @@ public class PlayerInputSender : MonoBehaviour
     }
     void Update()
     {
-        // Example: Log every key press (modify as needed)
         foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
         {
             if (Input.GetKeyDown(kcode))
@@ -57,7 +55,6 @@ public class PlayerInputSender : MonoBehaviour
         }
     }
 
-    // For death counts, now with scene name
     public void SendDeathCount(int deathCount)
     {
         string sceneName = SceneManager.GetActiveScene().name;
@@ -69,7 +66,7 @@ public class PlayerInputSender : MonoBehaviour
         if (currentUserID == -1) yield break;
 
         WWWForm form = new WWWForm();
-        form.AddField("user_id", currentUserID); // Add this line
+        form.AddField("user_id", currentUserID); 
         form.AddField("input_type", inputType);
         form.AddField("input_value", inputValue);
 
@@ -85,7 +82,7 @@ public class PlayerInputSender : MonoBehaviour
         if (currentUserID == -1) yield break;
 
         WWWForm form = new WWWForm();
-        form.AddField("user_id", currentUserID); // Add this line
+        form.AddField("user_id", currentUserID); 
         form.AddField("death_count", deathCount.ToString());
         form.AddField("scene_name", sceneName);
 
