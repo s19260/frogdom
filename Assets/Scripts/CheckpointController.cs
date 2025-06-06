@@ -5,9 +5,14 @@ public class CheckpointController : MonoBehaviour
 {
     [SerializeField]
     public Vector3 _startingPosition = new Vector3(-10f, 3f, 0); // extract variable into LevelManager-like script
+    private Rigidbody2D playerRigidBody;
+    private Animator animator;
     
-    
-    
+    private void Start()
+    {
+        playerRigidBody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
     public Vector3 StartingPosition
     {
         get
@@ -25,6 +30,11 @@ public class CheckpointController : MonoBehaviour
         if (collision.gameObject.CompareTag("Checkpoint") || collision.gameObject.CompareTag("SecretLevel1Teleport"))
         {
             Debug.Log("checkpoint " + _startingPosition);
+            Animator checkpointAnimator = collision.gameObject.GetComponent<Animator>();
+            if (checkpointAnimator != null)
+            {
+                checkpointAnimator.SetTrigger("openBook");
+            }
             _startingPosition = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
         }
     }
