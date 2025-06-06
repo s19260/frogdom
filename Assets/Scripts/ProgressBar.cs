@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     public Slider progressBar;          
-    public int totalCollectibles = 10;  
+    public int totalCollectibles = 20;  
     private int collected = 0;          
     public GameObject jumpPowerUpPrefab; // Add this field for the power-up prefab
 

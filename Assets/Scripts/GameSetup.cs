@@ -34,7 +34,6 @@ public class GameSetup : MonoBehaviour
     public GameObject[] jumpPowerUpContainer = new GameObject[1];
     public GameObject[] attackPowerUpContainer = new GameObject[1];
     public GameObject[] dashPowerUpContainer = new GameObject[1];
-    //public GameObject[] trashContainer = new GameObject[10];
 
     
 
