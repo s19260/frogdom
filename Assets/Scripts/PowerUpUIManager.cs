@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class JumpPowerUpUIManager : MonoBehaviour
+public class PowerUpUIManager : MonoBehaviour
 {
     public GameObject panel; // Assign the JumpPowerUpPanel in inspector
     public Text infoText;    // Assign the Text component in inspector

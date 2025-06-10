@@ -21,7 +21,7 @@ public class JumpPowerUpScript : MonoBehaviour
                 playerController.jumpInpulse = playerController.jumpInpulse * 1.3f;
 
                 // Show the UI and freeze the game
-                JumpPowerUpUIManager uiManager = FindObjectOfType<JumpPowerUpUIManager>();
+                PowerUpUIManager uiManager = FindObjectOfType<PowerUpUIManager>();
                 if (uiManager != null)
                 {
                     uiManager.Show("You got Jump Power Up!\nPress Space\n or Enter to continue.");
