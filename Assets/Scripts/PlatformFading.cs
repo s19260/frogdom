@@ -20,7 +20,7 @@ public class PlatformFading : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("collision enter with player");
+//            Debug.Log("collision enter with player");
 
             if (!hasPlayerTouched)
             {
@@ -40,7 +40,7 @@ public class PlatformFading : MonoBehaviour
 
     private IEnumerator FadeOut()
     {
-        Debug.Log("fade out");
+//        Debug.Log("fade out");
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
         
@@ -62,7 +62,7 @@ public class PlatformFading : MonoBehaviour
     {
         hasPlayerTouched = false;
 
-        Debug.Log("fade in");
+//        Debug.Log("fade in");
 
         while (spriteRenderer.color.a < originalAlpha)
         {

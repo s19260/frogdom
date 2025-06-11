@@ -73,7 +73,7 @@ public class PlayerInputSender : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-            Debug.Log("Input response: " + www.downloadHandler.text);
+//            Debug.Log("Input response: " + www.downloadHandler.text);
         }
     }
 

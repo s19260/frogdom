@@ -6,7 +6,7 @@ public class TrashPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Trash Pickup");
+//            Debug.Log("Trash Pickup");
             // Pass the player's transform to the Collect method
             FindObjectOfType<ProgressBar>().Collect(other.transform);
             Destroy(gameObject);
