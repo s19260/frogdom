@@ -3391,7 +3391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 167028319}
-  totalCollectibles: 30
+  totalCollectibles: 100
   jumpPowerUpPrefab: {fileID: 1906938717}
   attackPowerUpPrefab: {fileID: 1625071786}
   dashPowerUpPrefab: {fileID: 1216716131}
