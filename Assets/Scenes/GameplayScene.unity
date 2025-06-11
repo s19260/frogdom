@@ -10207,7 +10207,7 @@ Transform:
   m_GameObject: {fileID: 543923834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.3, y: 13.6, z: -10.01}
+  m_LocalPosition: {x: 113.82, y: 13.6, z: -10.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17716,8 +17716,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 1667027369}
   dialogueText: {fileID: 1328317211}
   dialogue:
-  - Hey Momo! Collect all the keys to unlock secret level and collect as much trash
-    as possible. Good luck!
+  - Hey Momo! Collect all the keys to unlock secret level and get as much trash as
+    possible. Good luck!
   wordSpeed: 0.02
   playerIsClose: 0
 --- !u!1001 &919761456
@@ -18826,7 +18826,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.3, y: 13.6, z: -10.01}
+  m_LocalPosition: {x: 113.82, y: 13.6, z: -10.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97658,7 +97658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1682538375807811393, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.3
+      value: 113.82
       objectReference: {fileID: 0}
     - target: {fileID: 1682538375807811393, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
       propertyPath: m_LocalPosition.y
