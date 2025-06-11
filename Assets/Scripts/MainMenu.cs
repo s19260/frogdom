@@ -8,8 +8,55 @@ public class MainMenu : MonoBehaviour
 {
     public InputField usernameInput;
     public GameObject errorText;
+    public GameObject creditsPanel; // Assign in inspector
+    public Button creditsButton;    // Assign in inspector
+    public Button backButton;       // Assign in inspector
+    public Text creditsText;        // Assign in inspector
     private string apiURL = "http://127.0.0.1:8000/insert_input.php";
 
+    private void Start()
+    {
+        // Initialize credits panel
+        creditsPanel.SetActive(false);
+        backButton.gameObject.SetActive(false);
+        
+        // Add button click listeners
+        creditsButton.onClick.AddListener(ShowCredits);
+        backButton.onClick.AddListener(BackToMainMenu);
+    }
+
+    public void ShowCredits()
+    {
+        usernameInput.gameObject.SetActive(false);
+        creditsButton.gameObject.SetActive(false);
+        errorText.SetActive(false);
+        
+        creditsPanel.SetActive(true);
+        backButton.gameObject.SetActive(true);
+        
+        creditsText.text = @"How to Play:
+- Use arrow keys to move
+- Space to jump
+- E to attack
+- Collect 30 trash pieces to get  new power-up
+- Collect keys to open Secret Levels
+- Avoid enemies and traps
+
+Creators:
+- Artist: Aysegul Deger
+- Programmer: Hubert Wisniewski
+";
+    }
+
+    public void BackToMainMenu()
+    {
+        // Show main menu elements
+        usernameInput.gameObject.SetActive(true);
+        creditsButton.gameObject.SetActive(true);
+        
+        creditsPanel.SetActive(false);
+        backButton.gameObject.SetActive(false);
+    }
     public void PlayGame()
     {
         StartCoroutine(SendUsername());
