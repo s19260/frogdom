@@ -30,10 +30,7 @@ public class PlayerController : MonoBehaviour
     public float dashCooldown = 1f;  // Adjust in Inspector
     private bool canDash = true;
     public Slider dashCooldownSlider;
-    [Header("Screen Shake")]
-    [SerializeField] private float shakeDuration = 0.2f;
-    [SerializeField] private float shakeIntensity = 0.3f;
-
+    
     // Direction on movement is determined by input value
     
     void Start()
@@ -259,9 +256,5 @@ public class PlayerController : MonoBehaviour
     public void onHit(int damage, Vector2 knockback)
     {
         rb.linearVelocity = new Vector2(knockback.x, rb.linearVelocity.y + knockback.y);
-        if (Camera.main != null)
-        {
-            Camera.main.GetComponent<CameraShake>()?.Shake(shakeDuration, shakeIntensity);
-        }
     }
 }

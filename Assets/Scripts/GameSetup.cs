@@ -26,7 +26,7 @@ public class GameSetup : MonoBehaviour
     public bool _dashPowerUp = false;
     public int deathCounter = 0;
     public int _trash = 0;
-
+    
     private string param_isAlive = "isAlive";
     [FormerlySerializedAs("hearts")] public GameObject[] heartsContainer = new GameObject[3];
     [FormerlySerializedAs("keys")] public GameObject[] keysContainer = new GameObject[3];
@@ -206,7 +206,6 @@ public class GameSetup : MonoBehaviour
             isInvincible = true;
             IsHit = true;
             damageableHit?.Invoke(damage, knockback);
-
             return true;
         }
         return false;
