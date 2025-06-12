@@ -17,10 +17,15 @@ public class Attack : MonoBehaviour
         if (gameSetup != null)
         {
             bool gotHit = gameSetup.Hit(attackDamage, knockback);
-            if (gotHit){
-            Debug.Log(collision.name + " hit for " + attackDamage);
-            shadow.TakeDamage(attackDamage);
+            if (gotHit)
+            {
+//                Debug.Log(collision.name + " hit for " + attackDamage);
+                if (shadow != null)
+                {
+                    shadow.TakeDamage(attackDamage);
+                }
             }
         }
     }
+
 }

@@ -120,7 +120,7 @@ public class GameSetup : MonoBehaviour
             _isAlive = value;
             //animator.SetBool(AnimationStrings.isAlive, value);
             animator.SetBool(param_isAlive, _isAlive);
-            Debug.Log("Is Alive set " + value);
+//            Debug.Log("Is Alive set " + value);
         }
     }
     Rigidbody2D rb;

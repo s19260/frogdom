@@ -52,7 +52,7 @@ public class TouchingDirections : MonoBehaviour
         animator = GetComponent<Animator>();
                 if(col.offset.x != 0)
         {
-            Debug.LogWarning("Recommended x offset of 0 for TouchingDirections collider on game object " + gameObject.name + ". Adjust the transform instead");
+         //   Debug.LogWarning("Recommended x offset of 0 for TouchingDirections collider on game object " + gameObject.name + ". Adjust the transform instead");
         }
 
     }
