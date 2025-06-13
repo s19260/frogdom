@@ -34,15 +34,15 @@ public class MainMenu : MonoBehaviour
         creditsPanel.SetActive(true);
         backButton.gameObject.SetActive(true);
         
-        creditsText.text = @"How to Play:
+        creditsText.text = @"How to Play
 - Use arrow keys to move
 - Space to jump
 - E to attack
-- Collect 30 trash pieces to get  new power-up
+- Collect 50 trash pieces to get  new power-up
 - Collect keys to open Secret Levels
 - Avoid enemies and traps
 
-Creators:
+Creators
 - Artist: Aysegul Deger
 - Programmer: Hubert Wisniewski
 ";
