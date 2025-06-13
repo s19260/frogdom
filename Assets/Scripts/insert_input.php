@@ -18,7 +18,6 @@ if ($conn->connect_error) {
 $response = ["status" => "error", "message" => "Invalid request"];
 
 try {
-    // INPUT EVENTS HANDLING
     if (isset($_POST['input_type'], $_POST['input_value'], $_POST['user_id'])) {
         $user_id = (int)$_POST['user_id'];
         $input_type = $conn->real_escape_string($_POST['input_type']);
@@ -35,7 +34,6 @@ try {
         $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
         $stmt->close();
     }
-    // USERNAME REGISTRATION
     elseif (isset($_POST['username'])) {
         $username = $conn->real_escape_string($_POST['username']);
 
@@ -55,7 +53,6 @@ try {
         }
         $stmt->close();
     }
-    // LEVEL COMPLETION TIME
     elseif (isset($_POST['completion_time'], $_POST['scene_name'], $_POST['user_id'])) {
         $user_id = (int)$_POST['user_id'];
         $completion_time = floatval($_POST['completion_time']);
@@ -68,7 +65,6 @@ try {
         $response = ["status" => "success", "affected_rows" => $stmt->affected_rows];
         $stmt->close();
     }
-    // DEATH COUNT
     elseif (isset($_POST['death_count'], $_POST['user_id'])) {
         $user_id = (int)$_POST['user_id'];
         $death_count = intval($_POST['death_count']);
