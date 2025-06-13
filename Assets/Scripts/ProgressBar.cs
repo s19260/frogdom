@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
@@ -30,6 +31,14 @@ public class ProgressBar : MonoBehaviour
         progressBar.minValue = 0;
         progressBar.maxValue = totalCollectibles;
         progressBar.value = 0;
+        if (SceneManager.GetActiveScene().name == "level 2")
+        {
+            nextPowerUp = PowerUpType.Attack;
+        }
+        else if (SceneManager.GetActiveScene().name == "level 3")
+        {
+            nextPowerUp = PowerUpType.Dash;
+        }
     }
 
     public void Collect(Transform playerTransform)
@@ -64,7 +73,9 @@ public class ProgressBar : MonoBehaviour
 
     private void CycleNextPowerUp()
     {
-        cycleIndex = (cycleIndex + 1) % powerUpCycle.Length;
-        nextPowerUp = powerUpCycle[cycleIndex];
+
+            cycleIndex = (cycleIndex + 2) % powerUpCycle.Length;
+            nextPowerUp = powerUpCycle[cycleIndex];
+        
     }
 }

@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
 - Use arrow keys to move
 - Space to jump
 - E to attack
-- Collect 50 trash pieces to get  new power-up
+- Collect trash pieces to get  new power-up
 - Collect keys to open Secret Levels
 - Avoid enemies and traps
 

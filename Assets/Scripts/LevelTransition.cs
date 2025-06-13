@@ -19,8 +19,11 @@ public class LevelTransition : MonoBehaviour
             {
                 Debug.LogError("PlayerInputSender not found on player!");
             }
-            
             SceneManager.LoadScene("Level 2");
+            if (SceneManager.GetActiveScene().name == "level 2")
+            {
+                SceneManager.LoadScene("level 3");
+            }
         }
     }
 
