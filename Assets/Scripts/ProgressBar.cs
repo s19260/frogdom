@@ -35,7 +35,7 @@ public class ProgressBar : MonoBehaviour
         {
             nextPowerUp = PowerUpType.Attack;
         }
-        else if (SceneManager.GetActiveScene().name == "level 3")
+        else if (SceneManager.GetActiveScene().name == "Level 3")
         {
             nextPowerUp = PowerUpType.Dash;
         }
