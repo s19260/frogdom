@@ -9,40 +9,11 @@ public class NPC : MonoBehaviour
     public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
-    private int index;
 
     public float wordSpeed;
     public bool playerIsClose;
 
-
-    void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.T) && playerIsClose)
-        {
-            if (dialogueBox.activeInHierarchy)
-            {
-                zeroText();
-            }
-            else
-            {
-                GameObject text = GameObject.FindGameObjectWithTag("Text");
-                text.SetActive(false);
-                dialogueBox.SetActive(true);
-                StartCoroutine(Typing());
-            }
-        }
-    }
-
-    public void zeroText()
-    {
-		if (dialogueText.text == null)
-			return;
-
-		index = 0;
-		dialogueText.text = "";
-		dialogueBox.SetActive(false);   
-    }
+    private Coroutine typingCoroutine;
 
     void Start()
     {
@@ -50,41 +21,67 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
     }
 
-    public void NextLine()
+    void Update()
     {
-        if (index < dialogue.Length - 1)
+        if (Input.GetKeyDown(KeyCode.T) && playerIsClose)
         {
-            index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
-        }
-        else
-        {
-            zeroText();
+            if (IsDialogueBoxEnabled())
+            {
+                DisableDialogueBox();
+            }
+            else
+            {
+                EnableDialogueBox();
+            }
         }
     }
+
+    public void EnableDialogueBox()
+    {
+        dialogueBox.SetActive(true);
+        typingCoroutine = StartCoroutine(Typing());
+    }
+
+    public void DisableDialogueBox()
+    {
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }
+
+        dialogueText.text = "";
+		dialogueBox.SetActive(false);
+    }
+
+    public bool IsDialogueBoxEnabled()
+    {
+        return dialogueBox.activeInHierarchy;
+    }
+
     IEnumerator Typing()
     {
-        foreach (char letter in dialogue[index].ToCharArray())
+        dialogueText.text = "";
+        foreach (char letter in dialogue[0].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-//            Debug.Log("player is close");
             playerIsClose = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-            zeroText();
+            DisableDialogueBox();
         }
     }
 }
