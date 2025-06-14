@@ -693,8 +693,8 @@ MonoBehaviour:
   _walkDirection: 0
   walkDirectionVector: {x: 1, y: 0}
   _hasTarget: 0
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 400
+  currentHealth: 400
   healthBarParent: {fileID: 8081920858013667809}
   healthBarFill: {fileID: 4936928993127415239}
   healthBarYOffset: 1.5
