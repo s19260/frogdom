@@ -32,16 +32,23 @@ public class NPC : MonoBehaviour
                 StartCoroutine(Typing());
             }
         }
-        
     }
 
     public void zeroText()
     {
-        dialogueText.text = "";
-        index = 0;
-        if(dialogueText.text != null)
-        dialogueBox.SetActive(false);
+		if (dialogueText.text == null)
+			return;
+
+		index = 0;
+		dialogueText.text = "";
+		dialogueBox.SetActive(false);
+
+        
+        
+        if (dialogueText.text != null)
+        	
     }
+
     void Start()
     {
         dialogueBox.SetActive(false);
