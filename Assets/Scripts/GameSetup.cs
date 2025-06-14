@@ -194,7 +194,8 @@ public class GameSetup : MonoBehaviour
         }
         set
         {
-            animator.SetBool(AnimationStrings.isHit, value);
+            //animator.SetBool(AnimationStrings.isHit, value);
+            animator.SetTrigger(AnimationStrings.isHit);
         } }
 
     
