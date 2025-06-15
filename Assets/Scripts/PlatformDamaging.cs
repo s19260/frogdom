@@ -20,8 +20,7 @@ public class PlatformDamaging : MonoBehaviour
             Debug.Log("collision enter with player");
 
             GameSetup gameSetup = collision.gameObject.GetComponentInParent<GameSetup>();
-
-            gameSetup.ModifyHealth(-1);
+            gameSetup.Hit(1);
             if (gameSetup._health <= 0)
             {
                 CheckpointController checkpointController = collision.gameObject.GetComponentInParent<CheckpointController>();

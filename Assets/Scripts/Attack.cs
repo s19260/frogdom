@@ -16,7 +16,7 @@ public class Attack : MonoBehaviour
 
         if (gameSetup != null)
         {
-            bool gotHit = gameSetup.Hit(attackDamage, knockback);
+            bool gotHit = gameSetup.Hit(attackDamage);
             if (gotHit)
             {
 //                Debug.Log(collision.name + " hit for " + attackDamage);
