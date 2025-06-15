@@ -31,7 +31,7 @@ public class ProgressBar : MonoBehaviour
         progressBar.minValue = 0;
         progressBar.maxValue = totalCollectibles;
         progressBar.value = 0;
-        if (SceneManager.GetActiveScene().name == "GameplayScene")
+        if (SceneManager.GetActiveScene().name == "Level 1")
         {
             nextPowerUp = PowerUpType.Jump;
         }

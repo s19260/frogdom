@@ -89,7 +89,7 @@ Creators
                     PlayerPrefs.SetInt("UserID", response.user_id);
                     Debug.Log("Stored UserID: " + response.user_id);
                     
-                    SceneManager.LoadScene("GameplayScene");
+                    SceneManager.LoadScene("Level 1");
                     Cursor.visible = false;
                 }
                 else
