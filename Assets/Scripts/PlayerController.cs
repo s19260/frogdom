@@ -27,12 +27,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
     
-    public float dashCooldown = 1f;  // Adjust in Inspector
+    public float dashCooldown = 1.5f;   // Adjust in Inspector
+    public float dashTime = 0.1f;       // Adjust in Inspector
     private bool canDash = true;
     public Slider dashCooldownSlider;
-    
+    private bool dashButtonHeld = false;
+
     // Direction on movement is determined by input value
-    
+
     void Start()
     {
         if (dashCooldownSlider != null)
@@ -142,7 +144,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput.x * CurrentMoveSpeed + CurrentDashSpeed, rb.linearVelocity.y);
-       // Debug.Log(rb.linearVelocity);
         animator.SetFloat(AnimationStrings.yVelocity, rb.linearVelocity.y);
     }
 
@@ -167,7 +168,7 @@ public class PlayerController : MonoBehaviour
         else if (moveInput.x < 0 && IsFacingRight) IsFacingRight = false;
     }
 
-    public void onRun(InputAction.CallbackContext context)
+    public void OnRun(InputAction.CallbackContext context)
     {
         if (context.started)
             IsRunning = true;
@@ -182,7 +183,6 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInpulse);
         }
     }
-    private bool dashButtonHeld = false;
 
     public void OnDash(InputAction.CallbackContext context)
     {
@@ -192,7 +192,7 @@ public class PlayerController : MonoBehaviour
         {
             dashButtonHeld = true;
             animator.SetTrigger("dashAnimation"); // Trigger dash animation
-            StartCoroutine(PerformDash());
+            StartCoroutine(DashCooldown());
         }
         else if (context.canceled)
         {
@@ -201,28 +201,35 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-    private IEnumerator PerformDash()
+    private IEnumerator DashCooldown()
     {
         canDash = false;
         IsDashing = true;
-    
-        rb.linearVelocity = new Vector2(20f, rb.linearVelocity.y);
-    
-        animator.SetTrigger(AnimationStrings.dash);
 
+        // Fire dash for a certain time
+        float elapsedTime = 0f;
+        while (elapsedTime < dashTime)
+        {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // We are no longer dashing
+        IsDashing = false;
+
+        // Cooldown and UI updating
         if (dashCooldownSlider != null)
         {
             dashCooldownSlider.value = 0f;
         }
         
-        float elapsed = 0f;
-        while (elapsed < dashCooldown)
+        float elapsedCooldown = 0f;
+        while (elapsedCooldown < dashCooldown)
         {
-            elapsed += Time.deltaTime;
+            elapsedCooldown += Time.deltaTime;
             if (dashCooldownSlider != null)
             {
-                dashCooldownSlider.value = Mathf.Clamp01(elapsed / dashCooldown) * dashCooldownSlider.maxValue;
+                dashCooldownSlider.value = Mathf.Clamp01(elapsedCooldown / dashCooldown) * dashCooldownSlider.maxValue;
             }
             yield return null;
         }
@@ -232,7 +239,7 @@ public class PlayerController : MonoBehaviour
             dashCooldownSlider.value = dashCooldownSlider.maxValue;
         }
     
-        IsDashing = false;
+        // We can dash again
         canDash = true;
     }
 
@@ -253,7 +260,7 @@ public class PlayerController : MonoBehaviour
         if (context.started) animator.SetTrigger(AnimationStrings.attack);
     }
 
-    public void onHit(int damage, Vector2 knockback)
+    public void OnHit(int damage, Vector2 knockback)
     {
         rb.linearVelocity = new Vector2(knockback.x, rb.linearVelocity.y + knockback.y);
     }
