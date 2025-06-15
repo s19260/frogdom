@@ -197,7 +197,6 @@ public class PlayerController : MonoBehaviour
         else if (context.canceled)
         {
             dashButtonHeld = false;
-            IsDashing = false;
         }
     }
 

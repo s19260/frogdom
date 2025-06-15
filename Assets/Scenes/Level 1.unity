@@ -118571,7 +118571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -43.40039, y: -39.5}
+  m_AnchoredPosition: {x: -43.40045, y: -39.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927474161
@@ -122112,14 +122112,6 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.023255587
       objectReference: {fileID: 0}
-    - target: {fileID: 719993606242892916, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: m_GravityScale
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 719993606242892916, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1682538375807811393, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -122256,6 +122248,14 @@ PrefabInstance:
       propertyPath: 'attackPowerUpContainer.Array.data[0]'
       value: 
       objectReference: {fileID: 1265222242}
+    - target: {fileID: 5731660158249713003, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731660158249713003, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5938951351128711114, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -122264,30 +122264,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6334545025340397076, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: runSpeed
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334545025340397076, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: dashSpeed
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334545025340397076, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: walkSpeed
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334545025340397076, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: jumpInpulse
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334545025340397076, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: dashCooldown
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334545025340397076, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
-      propertyPath: dashCooldownSlider
-      value: 
-      objectReference: {fileID: 1315037587}
     - target: {fileID: 6774668857194429599, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
       propertyPath: m_Sprite
       value: 
