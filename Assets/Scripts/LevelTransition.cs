@@ -20,9 +20,24 @@ public class LevelTransition : MonoBehaviour
                 Debug.LogError("PlayerInputSender not found on player!");
             }
             SceneManager.LoadScene("Level 2");
-            if (SceneManager.GetActiveScene().name == "level 2")
+            if (SceneManager.GetActiveScene().name == "Level 2")
             {
-                SceneManager.LoadScene("level 3");
+                SceneManager.LoadScene("Level 3");
+            }
+
+            if (SceneManager.GetActiveScene().name == "Level 3")
+            {
+                SceneManager.LoadScene("Level 1B");
+            }
+
+            if (SceneManager.GetActiveScene().name == "Level 1B")
+            {
+                SceneManager.LoadScene("Level 2B");
+            }
+
+            if (SceneManager.GetActiveScene().name == "Level 2B")
+            {
+                SceneManager.LoadScene("Level 3B");
             }
         }
     }
