@@ -903,9 +903,9 @@ MonoBehaviour:
         m_CallState: 2
   _isAlive: 1
   isInvincible: 0
-  invincibleTime: 0.25
-  _maxHealth: 100
-  _health: 100
+  invincibleTime: 1
+  _maxHealth: 3
+  _health: 3
   _keys: 0
   _jumpPowerUp: 0
   _attackPowerUp: 0
