@@ -7,6 +7,8 @@ public class ParallaxEffect : MonoBehaviour
     public Camera cam;
     public Transform followTarget;
 
+
+
     Vector2 startingPosition;
 
     float startingZ;
@@ -27,7 +29,9 @@ public class ParallaxEffect : MonoBehaviour
     void Update()
     {
         Vector2 newPosition = startingPosition + camMoveSinceStart * parallaxFactor;
-
         transform.position = new Vector3(newPosition.x, newPosition.y, startingZ);
+    }
+    public virtual void OnTargetObjectWarped(Transform target, Vector3 positionDelta)
+    {
     }
 }
