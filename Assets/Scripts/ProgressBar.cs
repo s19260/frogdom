@@ -31,14 +31,19 @@ public class ProgressBar : MonoBehaviour
         progressBar.minValue = 0;
         progressBar.maxValue = totalCollectibles;
         progressBar.value = 0;
-        if (SceneManager.GetActiveScene().name == "level 2")
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            nextPowerUp = PowerUpType.Jump;
+        }
+        if (SceneManager.GetActiveScene().name == "Level 2")
         {
             nextPowerUp = PowerUpType.Attack;
         }
-        else if (SceneManager.GetActiveScene().name == "Level 3")
+        if (SceneManager.GetActiveScene().name == "Level 3")
         {
             nextPowerUp = PowerUpType.Dash;
         }
+        
     }
 
     public void Collect(Transform playerTransform)

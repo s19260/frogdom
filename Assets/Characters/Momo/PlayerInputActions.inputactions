@@ -36,7 +36,7 @@
                     "name": "Run",
                     "type": "Button",
                     "id": "b6ac9902-e0a4-4c26-b233-e27d6d94a4e0",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -56,7 +56,7 @@
                     "id": "e6dce5bd-c7ff-4500-ae85-d2c65d30f1c5",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Press",
+                    "interactions": "",
                     "initialStateCheck": false
                 }
             ],
@@ -320,7 +320,7 @@
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false

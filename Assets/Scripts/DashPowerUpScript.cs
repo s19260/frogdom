@@ -7,19 +7,13 @@ public class DashPowerUpScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
-            
             collidingGameSetup.AddDashPowerUp();
             if (collidingGameSetup._dashPowerUp)
             {
                 Debug.Log("Dash Up ");
-                
                 collidingGameSetup.dashPowerUpContainer[0].SetActive(true);
-                
             }
             Destroy(this.gameObject);
-                
         }
-        
-
     }
 }

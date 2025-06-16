@@ -34,6 +34,7 @@ public class GameSetup : MonoBehaviour
     public GameObject[] jumpPowerUpContainer = new GameObject[1];
     public GameObject[] attackPowerUpContainer = new GameObject[1];
     public GameObject[] dashPowerUpContainer = new GameObject[1];
+    [SerializeField] private DamageFlash damageFlash; // assign in Inspector
 
     
 
@@ -194,19 +195,21 @@ public class GameSetup : MonoBehaviour
         }
         set
         {
-            //animator.SetBool(AnimationStrings.isHit, value);
             animator.SetTrigger(AnimationStrings.isHit);
-        } }
+            if (damageFlash != null)
+                damageFlash.Flash();
+        } 
+    }
 
     
-    public bool Hit(int damage, Vector2 knockback)
+    public bool Hit(int damage)
     {
         if (IsAlive && !isInvincible)
         {
             Health -= damage;
             isInvincible = true;
             IsHit = true;
-            damageableHit?.Invoke(damage, knockback);
+            damageableHit?.Invoke(damage, Vector2.zero);
             return true;
         }
         return false;
