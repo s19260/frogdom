@@ -27,7 +27,7 @@ public class CheckpointController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Checkpoint") || collision.gameObject.CompareTag("SecretLevel1Teleport"))
+        if (collision.gameObject.CompareTag("Checkpoint"))
         {
             Debug.Log("checkpoint " + _startingPosition);
             Animator checkpointAnimator = collision.gameObject.GetComponent<Animator>();

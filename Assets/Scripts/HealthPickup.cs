@@ -14,12 +14,11 @@ public class HealthPickup : MonoBehaviour
             GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
            
             
-                if (collidingGameSetup && collidingGameSetup.ModifyHealth(healthBonus))
+                if (collidingGameSetup && collidingGameSetup.Heal(healthBonus))
                 {
                     Debug.Log(collidingGameSetup.heartsContainer[collidingGameSetup._health-1]);
                     collidingGameSetup.heartsContainer[collidingGameSetup._health-1].SetActive(true);
-
-
+                    
                     Destroy(this.gameObject);
                 }
             

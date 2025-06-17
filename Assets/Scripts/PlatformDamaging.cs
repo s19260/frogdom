@@ -20,19 +20,10 @@ public class PlatformDamaging : MonoBehaviour
             Debug.Log("collision enter with player");
 
             GameSetup gameSetup = collision.gameObject.GetComponentInParent<GameSetup>();
-            gameSetup.Hit(1);
-            if (gameSetup._health <= 0)
+            if (gameSetup)
             {
-                CheckpointController checkpointController = collision.gameObject.GetComponentInParent<CheckpointController>();
-                
-                gameSetup.transform.position = new Vector3(checkpointController._startingPosition.x, checkpointController._startingPosition.y, 0);
-                gameSetup.IsAlive = true;
-                gameSetup.Health = 3;
-                gameSetup.heartsContainer[0].SetActive(true);
-                gameSetup.heartsContainer[1].SetActive(true);
-                gameSetup.heartsContainer[2].SetActive(true);
+                gameSetup.Hit(1);
             }
-
         }
     }
 }

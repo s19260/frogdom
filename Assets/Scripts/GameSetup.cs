@@ -71,12 +71,13 @@ public class GameSetup : MonoBehaviour
         }
     }
 
-    public bool ModifyHealth(int healthChange)
+    public bool Heal(int addedHealth)
     {
         if (_health <= MaxHealth)
         {
-            _health += healthChange;
+            _health += addedHealth;
             _health = Math.Clamp(_health, 0, MaxHealth);
+            
             return true;
             //zaszla zmiana
         }
@@ -119,9 +120,7 @@ public class GameSetup : MonoBehaviour
         set
         {
             _isAlive = value;
-            //animator.SetBool(AnimationStrings.isAlive, value);
             animator.SetBool(param_isAlive, _isAlive);
-//            Debug.Log("Is Alive set " + value);
         }
     }
     Rigidbody2D rb;
@@ -166,15 +165,26 @@ public class GameSetup : MonoBehaviour
             }
             timeSinceHit += Time.deltaTime;
         }
-
-        if (!_isAlive && CompareTag("Player"))
-        {
-             deathCounter++;
-             GetComponent<PlayerInputSender>().SendDeathCount(deathCounter);
-
-        }
-
     }
+
+    public void KillPlayer()
+    {
+        IsAlive = false;
+        deathCounter++;
+        GetComponent<PlayerInputSender>().SendDeathCount(deathCounter);
+        
+        IsAlive = true;
+        Health = 3;
+        heartsContainer[0].SetActive(true);
+        heartsContainer[1].SetActive(true);
+        heartsContainer[2].SetActive(true);
+        //Teleporting to last checkpoint
+        CheckpointController checkpointController = gameObject.GetComponent<CheckpointController>();
+        if (checkpointController)
+        {
+            transform.position = new Vector3(checkpointController._startingPosition.x,
+                checkpointController._startingPosition.y, 0);
+        }    }
 
     public bool HasAttackPowerUp
     {
@@ -210,6 +220,12 @@ public class GameSetup : MonoBehaviour
             isInvincible = true;
             IsHit = true;
             damageableHit?.Invoke(damage, Vector2.zero);
+            if (Health <= 0 && gameObject.CompareTag("Player"))
+            {
+                {
+                    KillPlayer();
+                }
+            }
             return true;
         }
         return false;

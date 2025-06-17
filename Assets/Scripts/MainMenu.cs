@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public Button creditsButton;    // Assign in inspector
     public Button backButton;       // Assign in inspector
     public Text creditsText;        // Assign in inspector
-    private string apiURL = "http://127.0.0.1:8000/insert_input.php";
+    private string apiURL = "https://serfer.izoslav.pl";
 
     private void Start()
     {
