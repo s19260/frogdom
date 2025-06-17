@@ -4,10 +4,10 @@ header("Access-Control-Allow-Origin: *");
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername = "127.0.0.1";
-$username = "serf";
-$password = "serf123";
-$dbname = "frogdom_db";
+$servername = "sql7.freesqldatabase.com:3306";
+$username = "sql7785323";
+$password = "5kb85XqgQB";
+$dbname = "sql7785323";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
