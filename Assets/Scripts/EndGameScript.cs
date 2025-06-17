@@ -11,7 +11,7 @@ public class EndGameScript : MonoBehaviour
             if (inputSender != null)
             {
                 inputSender.OnLevelComplete();
-            }
+            }   
             Debug.Log("Game Over");
             SceneManager.LoadScene("MainMenuScene");
         }
