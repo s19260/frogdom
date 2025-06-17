@@ -7,6 +7,11 @@ public class EndGameScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            PlayerInputSender inputSender = other.GetComponent<PlayerInputSender>();
+            if (inputSender != null)
+            {
+                inputSender.OnLevelComplete();
+            }
             Debug.Log("Game Over");
             SceneManager.LoadScene("MainMenuScene");
         }

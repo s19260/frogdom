@@ -59,6 +59,7 @@ public class PlayerInputSender : MonoBehaviour
     {
         string sceneName = SceneManager.GetActiveScene().name;
         StartCoroutine(SendDeathCountCoroutine(deathCount, sceneName));
+              Debug.Log("śmierć " + sceneName);
     }
 
     private IEnumerator SendInputCoroutine(string inputType, string inputValue)

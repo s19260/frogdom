@@ -116612,7 +116612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12471fccd2bb94c4fab21171492aa852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phpUrl: http://127.0.0.1:8000/insert_input.php
+  phpUrl: https://serfer.izoslav.pl
 --- !u!1 &1983122352
 GameObject:
   m_ObjectHideFlags: 0

@@ -552,7 +552,6 @@ GameObject:
   m_Component:
   - component: {fileID: 820674224}
   - component: {fileID: 820674225}
-  - component: {fileID: 820674226}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -604,47 +603,6 @@ MonoBehaviour:
   creditsButton: {fileID: 1669455848}
   backButton: {fileID: 411402477}
   creditsText: {fileID: 1504304516}
---- !u!114 &820674226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820674223}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 108245173ee9646ac8cd844fcb6fa331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageableHit:
-    m_PersistentCalls:
-      m_Calls: []
-  _isAlive: 1
-  isInvincible: 0
-  invincibleTime: 2
-  _maxHealth: 3
-  _health: 3
-  _keys: 0
-  _jumpPowerUp: 0
-  _attackPowerUp: 0
-  _dashPowerUp: 0
-  deathCounter: 0
-  _trash: 0
-  heartsContainer:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  keysContainer:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  jumpPowerUpContainer:
-  - {fileID: 0}
-  attackPowerUpContainer:
-  - {fileID: 0}
-  dashPowerUpContainer:
-  - {fileID: 0}
-  damageFlash: {fileID: 0}
 --- !u!1 &1059666573
 GameObject:
   m_ObjectHideFlags: 0
