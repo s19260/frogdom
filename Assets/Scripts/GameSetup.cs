@@ -165,20 +165,11 @@ public class GameSetup : MonoBehaviour
             }
             timeSinceHit += Time.deltaTime;
         }
-
-        if (!_isAlive && CompareTag("Player"))
-        {
-            OnPlayerDeath();
-        }
     }
 
     public void KillPlayer()
     {
         IsAlive = false;
-        OnPlayerDeath();
-    }
-    public void OnPlayerDeath()
-    {
         deathCounter++;
         GetComponent<PlayerInputSender>().SendDeathCount(deathCounter);
         
@@ -193,8 +184,8 @@ public class GameSetup : MonoBehaviour
         {
             transform.position = new Vector3(checkpointController._startingPosition.x,
                 checkpointController._startingPosition.y, 0);
-        }
-    }
+        }    }
+
     public bool HasAttackPowerUp
     {
         get
