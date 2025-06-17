@@ -220,9 +220,11 @@ public class GameSetup : MonoBehaviour
             isInvincible = true;
             IsHit = true;
             damageableHit?.Invoke(damage, Vector2.zero);
-            if (Health <= 0)
+            if (Health <= 0 && gameObject.CompareTag("Player"))
             {
-                KillPlayer();
+                {
+                    KillPlayer();
+                }
             }
             return true;
         }
