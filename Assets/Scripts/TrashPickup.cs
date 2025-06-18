@@ -19,7 +19,7 @@ public class TrashPickup : MonoBehaviour
            // PlayPickupSound();
             FindObjectOfType<ProgressBar>().Collect(other.transform);
             GetComponent<SpriteRenderer>().enabled = false;
-          //   Destroy(gameObject, pickupSound.length);
+            Destroy(gameObject);
         }
     }
     
