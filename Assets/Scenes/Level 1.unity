@@ -232,7 +232,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (27)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -423,7 +424,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -582,7 +584,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -808,7 +811,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -865,7 +869,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1895,7 +1900,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9100539437153328231, guid: 523422977b98e48308fa3cca108b8205, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2196,7 +2202,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2269,7 +2276,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (42)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2616,7 +2624,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2760,7 +2769,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2884,7 +2894,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3003,7 +3014,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3060,7 +3072,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3820,7 +3833,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4011,7 +4025,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4158,7 +4173,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6331,7 +6347,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (26)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6688,7 +6705,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7066,7 +7084,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 3 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7123,7 +7142,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7657,7 +7677,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7714,7 +7735,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7858,7 +7880,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7982,7 +8005,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8218,7 +8242,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8449,7 +8474,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8670,7 +8696,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9372,7 +9399,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9971,7 +9999,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10033,7 +10062,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (33)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10161,7 +10191,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10404,7 +10435,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10625,7 +10657,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10739,7 +10772,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10877,7 +10911,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11014,7 +11049,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11341,7 +11377,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (37)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11398,7 +11435,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12645,7 +12683,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13122,7 +13161,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13366,7 +13406,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (34)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13423,7 +13464,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (38)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13561,7 +13603,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (36)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13623,7 +13666,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14257,7 +14301,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14340,7 +14385,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14488,7 +14534,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 3 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15147,7 +15194,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15241,7 +15289,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (40)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15405,7 +15454,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (31)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15681,7 +15731,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16091,7 +16142,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (35)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16240,7 +16292,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16491,7 +16544,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (30)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16828,7 +16882,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17074,7 +17129,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (39)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18094,7 +18150,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (23)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18410,7 +18467,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18569,7 +18627,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (32)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -103785,7 +103844,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -113586,7 +113646,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -113803,7 +113864,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -114584,7 +114646,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -114651,7 +114714,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -114713,7 +114777,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -114770,7 +114835,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -115385,7 +115451,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -115529,7 +115596,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash 2 (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -115924,7 +115992,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: pickup trash 9 (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6186511790042951335, guid: 0dbf30032167e4dc49597f68e3919ee1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -116345,7 +116414,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Trash
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5505575794017670677, guid: 8fafdc4e5375a456ab0f395f654449f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
