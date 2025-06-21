@@ -34,17 +34,9 @@ public class MainMenu : MonoBehaviour
         creditsPanel.SetActive(true);
         backButton.gameObject.SetActive(true);
         
-        creditsText.text = @"How to Play
-- Use arrow keys to move
-- Space to jump
-- E to attack
-- Collect trash pieces to get  new power-up
-- Collect keys to open Secret Levels
-- Avoid enemies and traps
-
+        creditsText.text = @"
 Creators
-- Artist: Aysegul Deger
-- Programmer: Hubert Wisniewski
+Artist: Aysegul Deger,  Programmer: Hubert Wisniewski
 ";
     }
     
