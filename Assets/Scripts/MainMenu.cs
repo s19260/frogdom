@@ -8,11 +8,9 @@ public class MainMenu : MonoBehaviour
 {
     public InputField usernameInput;
     public GameObject errorText;
-    public GameObject creditsPanel;
-    public GameObject startPanel;
+    public GameObject creditsPanel; 
     public Button creditsButton;    
     public Button backButton;       
-    public Button playButton;
     public Text creditsText;        
     private string apiURL = "https://serfer.izoslav.pl";
 
@@ -20,14 +18,11 @@ public class MainMenu : MonoBehaviour
     {
         // Initialize credits panel
         creditsPanel.SetActive(false);
-        startPanel.SetActive(false);
         backButton.gameObject.SetActive(false);
-        playButton.gameObject.SetActive(false);
         
         // Add button click listeners
         creditsButton.onClick.AddListener(ShowCredits);
         backButton.onClick.AddListener(BackToMainMenu);
-        playButton.onClick.AddListener(PlayGame);
     }
 
     public void ShowCredits()
@@ -52,22 +47,7 @@ Creators
 - Programmer: Hubert Wisniewski
 ";
     }
-
-    public void StartGame()
-    {
-        //usernameInput.gameObject.SetActive(true);
-        creditsButton.gameObject.SetActive(false);
-        errorText.SetActive(false);
-        
-        startPanel.SetActive(true);
-        playButton.gameObject.SetActive(true);
-        backButton.gameObject.SetActive(true);
-        
-        creditsText.text = @"
-test start gry test test
-";
-
-    }
+    
 
     public void BackToMainMenu()
     {
