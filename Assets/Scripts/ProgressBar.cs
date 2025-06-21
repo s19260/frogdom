@@ -31,15 +31,15 @@ public class ProgressBar : MonoBehaviour
         progressBar.minValue = 0;
         progressBar.maxValue = totalCollectibles;
         progressBar.value = 0;
-        if (SceneManager.GetActiveScene().name == "Level 1")
+        if (SceneManager.GetActiveScene().name == "Level 1" || SceneManager.GetActiveScene().name == "Level 1B ")
         {
             nextPowerUp = PowerUpType.Jump;
         }
-        if (SceneManager.GetActiveScene().name == "Level 2")
+        if (SceneManager.GetActiveScene().name == "Level 2" || SceneManager.GetActiveScene().name == "Level 2B ")
         {
             nextPowerUp = PowerUpType.Attack;
         }
-        if (SceneManager.GetActiveScene().name == "Level 3")
+        if (SceneManager.GetActiveScene().name == "Level 3" || SceneManager.GetActiveScene().name == "Level 3B ")
         {
             nextPowerUp = PowerUpType.Dash;
         }
