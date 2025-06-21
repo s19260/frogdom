@@ -116232,6 +116232,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6192112868865360666, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
+      propertyPath: phpUrl
+      value: https://serfer.izoslav.pl
+      objectReference: {fileID: 0}
     - target: {fileID: 6276966821587219700, guid: d5738ea85afdc4a82881b8b2500295e8, type: 3}
       propertyPath: m_IsTrigger
       value: 1

@@ -8,21 +8,26 @@ public class MainMenu : MonoBehaviour
 {
     public InputField usernameInput;
     public GameObject errorText;
-    public GameObject creditsPanel; // Assign in inspector
-    public Button creditsButton;    // Assign in inspector
-    public Button backButton;       // Assign in inspector
-    public Text creditsText;        // Assign in inspector
+    public GameObject creditsPanel;
+    public GameObject startPanel;
+    public Button creditsButton;    
+    public Button backButton;       
+    public Button playButton;
+    public Text creditsText;        
     private string apiURL = "https://serfer.izoslav.pl";
 
     private void Start()
     {
         // Initialize credits panel
         creditsPanel.SetActive(false);
+        startPanel.SetActive(false);
         backButton.gameObject.SetActive(false);
+        playButton.gameObject.SetActive(false);
         
         // Add button click listeners
         creditsButton.onClick.AddListener(ShowCredits);
         backButton.onClick.AddListener(BackToMainMenu);
+        playButton.onClick.AddListener(PlayGame);
     }
 
     public void ShowCredits()
@@ -46,6 +51,22 @@ Creators
 - Artist: Aysegul Deger
 - Programmer: Hubert Wisniewski
 ";
+    }
+
+    public void StartGame()
+    {
+        //usernameInput.gameObject.SetActive(true);
+        creditsButton.gameObject.SetActive(false);
+        errorText.SetActive(false);
+        
+        startPanel.SetActive(true);
+        playButton.gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
+        
+        creditsText.text = @"
+test start gry test test
+";
+
     }
 
     public void BackToMainMenu()
@@ -89,7 +110,7 @@ Creators
                     PlayerPrefs.SetInt("UserID", response.user_id);
                     Debug.Log("Stored UserID: " + response.user_id);
                     
-                    SceneManager.LoadScene("Level 1");
+                    SceneManager.LoadScene("Tutorial");
                     Cursor.visible = false;
                 }
                 else
