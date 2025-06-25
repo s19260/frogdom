@@ -12,7 +12,6 @@ public class HealthPickup : MonoBehaviour
         {
             Debug.Log("Health Pickup");
             GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
-           
             
                 if (collidingGameSetup && collidingGameSetup.Heal(healthBonus))
                 {
@@ -21,9 +20,6 @@ public class HealthPickup : MonoBehaviour
                     
                     Destroy(this.gameObject);
                 }
-            
         }
-        
-
     }
 }

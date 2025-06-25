@@ -17,8 +17,6 @@ public class PlatformDeath : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("collision enter with player");
-            
             GameSetup gameSetup = collision.gameObject.GetComponentInParent<GameSetup>();
             if (gameSetup)
             {
@@ -26,5 +24,4 @@ public class PlatformDeath : MonoBehaviour
             }
         }
     }
-
 }

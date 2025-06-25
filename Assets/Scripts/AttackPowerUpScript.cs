@@ -9,7 +9,6 @@ public class AttackPowerUpScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameSetup collidingGameSetup = other.GetComponentInParent<GameSetup>();
-            PlayerController playerController = other.GetComponent<PlayerController>();
             
             collidingGameSetup.AddAttackPowerUp();
             if (collidingGameSetup._attackPowerUp)
@@ -17,12 +16,8 @@ public class AttackPowerUpScript : MonoBehaviour
                 Debug.Log("Attack Up ");
                 
                 collidingGameSetup.attackPowerUpContainer[0].SetActive(true);
-                
             }
             Destroy(this.gameObject);
-                
         }
-        
-
     }
 }

@@ -20,8 +20,6 @@ public class PlatformFading : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-//            Debug.Log("collision enter with player");
-
             if (!hasPlayerTouched)
             {
                 StartCoroutine(FadeOut());
@@ -30,17 +28,9 @@ public class PlatformFading : MonoBehaviour
         }
     }
 
-    private IEnumerator ExampleCoroutine()
-    {
-        yield return new WaitForSeconds(5);
-        Debug.Log("odpalona korutyna");
-        
-        Destroy(gameObject);
-    }
 
     private IEnumerator FadeOut()
     {
-//        Debug.Log("fade out");
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
         
@@ -48,7 +38,6 @@ public class PlatformFading : MonoBehaviour
         {
             var color = spriteRenderer.color;
             spriteRenderer.color = new Color(color.r, color.g, color.b, color.a - 0.01f);
-
             yield return new WaitForSeconds(Time.unscaledDeltaTime * 5);
         }
 
@@ -61,17 +50,12 @@ public class PlatformFading : MonoBehaviour
     private IEnumerator FadeIn()
     {
         hasPlayerTouched = false;
-
-//        Debug.Log("fade in");
-
         while (spriteRenderer.color.a < originalAlpha)
         {
             var color = spriteRenderer.color;
             spriteRenderer.color = new Color(color.r, color.g, color.b, color.a + 0.01f);
-
             yield return new WaitForSeconds(Time.unscaledDeltaTime);
         }
-
         currentCoroutine = null;
     }
 }

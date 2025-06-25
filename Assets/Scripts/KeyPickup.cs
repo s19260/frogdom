@@ -26,12 +26,8 @@ public class KeyPickup : MonoBehaviour
             {
                 Debug.Log("Key pickup 3");
                 collidingGameSetup.keysContainer[2].SetActive(true); 
-
             }
                 Destroy(this.gameObject);
-                
         }
-        
-
     }
 }

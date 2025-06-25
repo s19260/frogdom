@@ -5,7 +5,6 @@ using System.Collections;
 
 public class PlayerInputSender : MonoBehaviour
 {
-    [Tooltip("URL to your PHP script handling all tables")]
     public string phpUrl = "http://127.0.0.1:8000/insert_input.php";
 
     private float levelStartTime;
@@ -36,10 +35,8 @@ public class PlayerInputSender : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-            Debug.Log("Response: " + www.downloadHandler.text); 
         }
     }
-    // For general inputs
     public void SendPlayerInput(string inputType, string inputValue)
     {
         StartCoroutine(SendInputCoroutine(inputType, inputValue));
@@ -59,7 +56,6 @@ public class PlayerInputSender : MonoBehaviour
     {
         string sceneName = SceneManager.GetActiveScene().name;
         StartCoroutine(SendDeathCountCoroutine(deathCount, sceneName));
-              Debug.Log("śmierć " + sceneName);
     }
 
     private IEnumerator SendInputCoroutine(string inputType, string inputValue)
@@ -74,7 +70,6 @@ public class PlayerInputSender : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-            Debug.Log("Input response: " + www.downloadHandler.text);
         }
     }
 
@@ -90,7 +85,6 @@ public class PlayerInputSender : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Post(phpUrl, form))
         {
             yield return www.SendWebRequest();
-            Debug.Log("Death response: " + www.downloadHandler.text);
         }
     }
 }

@@ -15,13 +15,10 @@ public class SecretLevelEntrance : MonoBehaviour
         {
             if (_targetObject)
             {
-                // Get position delta
                 Vector3 positionDelta = _targetObject.transform.position - other.transform.position;
 
-                // Teleport the player
                 other.transform.position = _targetObject.transform.position;
 
-                // Teleport the camera (without shaking)
                 CinemachineVirtualCameraBase virtualCamera = CinemachineCore.GetVirtualCamera(0);
                 virtualCamera.OnTargetObjectWarped(other.transform, positionDelta);
             }

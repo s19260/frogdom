@@ -12,9 +12,7 @@ public class EndGameScript : MonoBehaviour
             {
                 inputSender.OnLevelComplete();
             }   
-            Debug.Log("Game Over");
             SceneManager.LoadScene("MainMenuScene");
         }
     }
-
 }

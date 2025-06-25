@@ -13,7 +13,7 @@ public class DamageFlash : MonoBehaviour
     private void Awake()
     {
         if (flashImage != null)
-            flashImage.color = new Color(1, 0, 0, 0); // fully transparent at start
+            flashImage.color = new Color(1, 0, 0, 0);
     }
 
     public void Flash()
@@ -28,6 +28,6 @@ public class DamageFlash : MonoBehaviour
         if (flashImage == null) yield break;
         flashImage.color = flashColor;
         yield return new WaitForSeconds(flashDuration);
-        flashImage.color = new Color(1, 0, 0, 0); // fade out instantly, or lerp if you want
+        flashImage.color = new Color(1, 0, 0, 0); 
     }
 }

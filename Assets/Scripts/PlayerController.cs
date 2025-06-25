@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public float dashSpeed = 100f;
     public float jumpInpulse = 60f;
 
-
     [SerializeField] 
     private bool _isMoving;
 
@@ -27,14 +26,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private TouchingDirections touchingDirections;
     
-    public float dashCooldown = 1.5f;   // Adjust in Inspector
-    public float dashTime = 0.1f;       // Adjust in Inspector
+    public float dashCooldown = 1.5f;   
+    public float dashTime = 0.1f;       
     private bool canDash = true;
     public Slider dashCooldownSlider;
     private bool dashButtonHeld = false;
-
-    // Direction on movement is determined by input value
-
+    
     void Start()
     {
         if (dashCooldownSlider != null)
@@ -64,13 +61,11 @@ public class PlayerController : MonoBehaviour
         {
             if (IsDashing)
             {
-                // Important! We assume we only dash in X right now
                 if (IsFacingRight)
                     return dashSpeed;
                 else
                     return -dashSpeed;
             }
-
             return 0;
         }
     }
@@ -84,7 +79,6 @@ public class PlayerController : MonoBehaviour
             animator.SetBool(AnimationStrings.isMoving, value);
         }
     }
-
     
     public bool CanMove
     {

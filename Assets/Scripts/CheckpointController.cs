@@ -4,7 +4,7 @@ using UnityEngine.Splines;
 public class CheckpointController : MonoBehaviour
 {
     [SerializeField]
-    public Vector3 _startingPosition = new Vector3(-10f, 3f, 0); // extract variable into LevelManager-like script
+    public Vector3 _startingPosition = new Vector3(-10f, 3f, 0);
     private Rigidbody2D playerRigidBody;
     private Animator animator;
     
@@ -38,11 +38,7 @@ public class CheckpointController : MonoBehaviour
             _startingPosition = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 0);
         }
     }
-
-    private void ReturnToCheckpoint()
-    {
-        
-    }
+    
     private void Update()
     {
         if (CompareTag("Player"))

@@ -4,8 +4,7 @@ using UnityEngine.UI;
 
 public class PlayerInputCollector : MonoBehaviour
 {
-    public InputField inputField; // Assign this in the Inspector if using UI input
-
+    public InputField inputField; 
     private string filePath;
 
     void Start()
@@ -15,7 +14,6 @@ public class PlayerInputCollector : MonoBehaviour
 
     void Update()
     {
-        // Example: Log every key pressed
         foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
         {
             if (Input.GetKeyDown(kcode))
@@ -25,7 +23,6 @@ public class PlayerInputCollector : MonoBehaviour
         }
     }
 
-    // Call this from the InputField's OnEndEdit event
     public void OnInputFieldSubmit(string userInput)
     {
         WriteToFile("InputField: " + userInput);

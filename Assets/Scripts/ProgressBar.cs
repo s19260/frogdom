@@ -78,9 +78,7 @@ public class ProgressBar : MonoBehaviour
 
     private void CycleNextPowerUp()
     {
-
             cycleIndex = (cycleIndex + 2) % powerUpCycle.Length;
             nextPowerUp = powerUpCycle[cycleIndex];
-        
     }
 }

@@ -54,7 +54,6 @@ public class Shadow : MonoBehaviour
         }
     }
 
-    // === HEALTH BAR ===
     [Header("Health Settings")]
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
@@ -119,7 +118,6 @@ public class Shadow : MonoBehaviour
         }
     }
 
-    // === HEALTH BAR LOGIC ===
 
     public void TakeDamage(int damage)
     {
@@ -154,10 +152,8 @@ public class Shadow : MonoBehaviour
 
     private void Die()
     {
-        // Add death animation or effects here if needed
         if (healthBarParent != null)
             healthBarParent.SetActive(false);
-
-        Destroy(gameObject, 0.5f); // Delay for death animation
+        Destroy(gameObject, 0.5f); 
     }
 }
