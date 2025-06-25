@@ -58,7 +58,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // As Dash can be executed even on idle state direction is determined by sprite facing direction
     public float CurrentDashSpeed
     {
         get

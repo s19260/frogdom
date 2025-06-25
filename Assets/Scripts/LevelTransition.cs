@@ -27,7 +27,7 @@ public class LevelTransition : MonoBehaviour
 
             if (SceneManager.GetActiveScene().name == "Tutorial")
             {
-                SceneManager.LoadScene("Level 1B");
+                SceneManager.LoadScene("Level 1");
             }
             if (SceneManager.GetActiveScene().name == "Level 1")
             {

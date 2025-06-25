@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61439a3b-e6cd-437d-8e3d-d81f1e4ff02c" name="Changes" comment="" />
+    <list default="true" id="61439a3b-e6cd-437d-8e3d-d81f1e4ff02c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1B.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1B.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
